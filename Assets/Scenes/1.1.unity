@@ -225,15 +225,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi
-    quam, malesuada id semper eget, volutpat ut felis. Aliquam tempus orci nec eros
-    suscipit tempus. Donec rhoncus vel felis in scelerisque. Maecenas lacinia mauris
-    a fermentum tincidunt. Etiam quis lacus gravida, tincidunt augue vel, tristique
-    diam. Phasellus ultricies purus velit, in tristique massa mattis sed. Mauris
-    maximus lacinia metus non semper. Aliquam id lacus enim. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Phasellus venenatis enim eget consequat auctor.
-    Pellentesque id molestie eros. Quisque tincidunt ante sed nisl tempor suscipit
-    at a massa. Phasellus orci sapien, feugiat vitae rutrum sit amet, bibendum pellentesque
-    urna. Donec eu auctor tellus, placerat aliquet quam. '
+    quam, malesuada id semper eget, volutpat ut felis. Aliquam tempus orc \ni nec
+    eros suscipit tempus. Donec rhoncus vel felis in scelerisque. Maecenas lacinia
+    mauris a fermentum tincidunt. Etiam quis lacus gravida, tincidunt augue vel,
+    tristique diam. Phasellus ultricies purus velit, in tristique massa mattis sed.
+    Mauris maximus lacinia metus non semper. Aliquam id lacus enim. Lorem ipsum dolor
+    sit amet, consectetur adipiscing elit. Phasellus venenatis enim eget consequat
+    auctor. Pellentesque id molestie eros. Quisque tincidunt ante sed nisl tempor
+    suscipit at a massa. Phasellus orci sapien, feugiat vitae rutrum sit amet, bibendum
+    pellentesque urna. Donec eu auctor tellus, placerat aliquet quam. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -385,6 +385,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914432640}
   m_CullTransparentMesh: 1
+--- !u!1 &996793711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 996793713}
+  - component: {fileID: 996793712}
+  m_Layer: 0
+  m_Name: MovingText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &996793712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996793711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eebee0bfd3673d64d89e4c4600f75012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 0}
+  paragraphs:
+  - Keimeno
+  - Keimeno2222
+--- !u!4 &996793713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996793711}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1031.6094, y: 1053.5801, z: -11.301923}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1079427447
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +631,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187448236}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 140.20882, y: 214.55585, z: -29.155329}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -859,7 +907,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1557117598}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 996793712}
+        m_TargetAssemblyTypeName: TestScript_Next, Assembly-CSharp
+        m_MethodName: NextParagraph
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1557117598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,7 +970,6 @@ GameObject:
   - component: {fileID: 1809170514}
   - component: {fileID: 1809170513}
   - component: {fileID: 1809170512}
-  - component: {fileID: 1809170515}
   m_Layer: 5
   m_Name: X-Button
   m_TagString: Untagged
@@ -993,18 +1052,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 82771147}
-        m_TargetAssemblyTypeName: MainMenu_Buttons, Assembly-CSharp
-        m_MethodName: playClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1809170513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,102 +1090,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809170510}
   m_CullTransparentMesh: 1
---- !u!82 &1809170515
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809170510}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 32d8022f6d9a4f042bcaa2dfeaeca20c, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &2014098362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,3 +1194,4 @@ SceneRoots:
   - {fileID: 1145457911}
   - {fileID: 82771144}
   - {fileID: 1187448237}
+  - {fileID: 996793713}
