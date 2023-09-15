@@ -35,6 +35,12 @@ public class Player_Manager : MonoBehaviour
     {
         levelsCompleted++;
     }
+    public void resetProgress()
+    {
+        levelsCompleted=0;
+        totalScore=0;
+        
+    }
 
 
    
