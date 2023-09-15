@@ -9,17 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 3f7f916d04aa50942be86ef69029e05d
   - enabled: 1
-    path: Assets/Scenes/ZZZ_LEVELSELECT.unity
-    guid: c00edd660d9210a4389849b552d90cda
-  - enabled: 1
     path: Assets/Scenes/1.1.unity
-    guid: a64f63fbbeec33245b96c3f2802ce41c
+    guid: 01228354c6456c944bd921b7aec3398e
   - enabled: 1
     path: Assets/Scenes/QuizScene.unity
     guid: d01a584e7168a3b40aafcc1b374fe9b3
   - enabled: 1
     path: Assets/Scenes/Credits_Scene.unity
     guid: 65cbd0aed51215b4d89382330c249ce5
+  - enabled: 1
+    path: Assets/Scenes/ZZZ_LEVELSELECT.unity
+    guid: c00edd660d9210a4389849b552d90cda
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e2f581253a8581d4c88aa6aaed113161,
       type: 2}
