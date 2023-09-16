@@ -31,14 +31,14 @@ public class AnswerButtons : MonoBehaviour
 
     public GameObject currentScore;
     public int scoreValue;
-    public int bestScore;
-    public GameObject bestDisplay;
+    //public int bestScore;
+    //public GameObject bestDisplay;
  
-    void Start()
+   /* void Start()
     {
         bestScore = PlayerPrefs.GetInt("BestScoreQuiz");
         bestDisplay.GetComponent<Text>().text = "BEST: " + bestScore;
-    }
+    } */
 
     void Update()
     {
@@ -60,7 +60,16 @@ public class AnswerButtons : MonoBehaviour
             answerDbackRed.SetActive(true);
             answerDbackBlue.SetActive(false);
             wrongFX.Play();
-            scoreValue = 0;
+            if (scoreValue == 0)
+            {
+                scoreValue = 0;
+            }
+            else
+            {
+                scoreValue -= 5;
+            }
+            
+            
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
@@ -84,7 +93,14 @@ public class AnswerButtons : MonoBehaviour
             answerCbackRed.SetActive(true);
             answerCbackBlue.SetActive(false);
             wrongFX.Play();
-            scoreValue = 0;
+            if(scoreValue == 0)
+            {
+                scoreValue = 0;
+            }
+            else
+            {
+                scoreValue -= 5;
+            }
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
@@ -107,7 +123,14 @@ public class AnswerButtons : MonoBehaviour
             answerBbackRed.SetActive(true);
             answerBbackBlue.SetActive(false);
             wrongFX.Play();
-            scoreValue = 0;
+            if (scoreValue == 0)
+            {
+                scoreValue = 0;
+            }
+            else
+            {
+                scoreValue -= 5;
+            }
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
@@ -130,7 +153,14 @@ public class AnswerButtons : MonoBehaviour
             answerAbackRed.SetActive(true);
             answerAbackBlue.SetActive(false);
             wrongFX.Play();
-            scoreValue = 0;
+            if (scoreValue == 0)
+            {
+                scoreValue = 0;
+            }
+            else
+            {
+                scoreValue -= 5;
+            }
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
@@ -141,12 +171,12 @@ public class AnswerButtons : MonoBehaviour
 
     IEnumerator NextQuestion()
     {
-        if (bestScore < scoreValue)
+        /*if (bestScore < scoreValue)
         {
             PlayerPrefs.SetInt("BestScoreQuiz", scoreValue);
             bestScore = scoreValue;
             bestDisplay.GetComponent<Text>().text = "BEST: " + scoreValue;
-        }
+        } */
         yield return new WaitForSeconds(2);
 
         answerDbackGreen.SetActive(false);
