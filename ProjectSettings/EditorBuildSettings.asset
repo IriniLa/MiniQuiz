@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ZZZ_LEVELSELECT.unity
     guid: c00edd660d9210a4389849b552d90cda
+  - enabled: 1
+    path: Assets/Scenes/IrisTry.unity
+    guid: f04c8efb2a3951143804811ee34522d8
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e2f581253a8581d4c88aa6aaed113161,
       type: 2}
