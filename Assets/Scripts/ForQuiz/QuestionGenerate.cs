@@ -7,14 +7,16 @@ public class QuestionGenerate : MonoBehaviour
     public static string actualAnswer;
     public static bool displayingQuestion = false;
 
-    public int questionNumber = 1;
+    public int questionNumber = 1; // Αρχικοποιήστε τον αριθμό της πρώτης ερώτησης.
+    public int totalQuestions = 4; // Ολικός αριθμός ερωτήσεων.
+    private bool quizCompleted = false; // Μεταβλητή που υποδεικνύει αν ολοκληρώθηκε το κουίζ.
 
     void Start() // Χρησιμοποιήστε τη μέθοδο Start για την αρχικοποίηση.
     {
         displayingQuestion = false; // Κάντε την ψευδή όταν ξεκινά η σκηνή.
         questionNumber = 1; // Αρχικοποιήστε τον αριθμό της πρώτης ερώτησης.
     }
-
+    
     void Update()
     {
         if (displayingQuestion == false)
