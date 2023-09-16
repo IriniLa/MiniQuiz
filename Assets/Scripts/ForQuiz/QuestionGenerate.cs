@@ -7,15 +7,20 @@ public class QuestionGenerate : MonoBehaviour
     public static string actualAnswer;
     public static bool displayingQuestion = false;
 
-    public int questionNumber;
+    public int questionNumber = 1;
 
+    void Start() // Χρησιμοποιήστε τη μέθοδο Start για την αρχικοποίηση.
+    {
+        displayingQuestion = false; // Κάντε την ψευδή όταν ξεκινά η σκηνή.
+        questionNumber = 1; // Αρχικοποιήστε τον αριθμό της πρώτης ερώτησης.
+    }
 
     void Update()
     {
         if (displayingQuestion == false)
         {
             displayingQuestion = true;
-            questionNumber = Random.Range(1, 5);
+            //questionNumber = Random.Range(1, 5);
                 if (questionNumber == 1)
                 {
 
@@ -56,9 +61,16 @@ public class QuestionGenerate : MonoBehaviour
                     QuestionDisplay.newD = "Δ. \\\"";
                     actualAnswer = "Α";
                 }
-            
+
+            questionNumber++;
+
+          /*  if (questionNumber > 4)
+            {
+                questionNumber = 1;
+            } */
+
             // all question go above this line
-            QuestionDisplay.pleaseUpdate = false;
+           QuestionDisplay.pleaseUpdate = false;
         }
     }
 }
