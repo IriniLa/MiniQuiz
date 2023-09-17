@@ -19,10 +19,13 @@ public class QuestionGenerate : MonoBehaviour
     
     void Update()
     {
-        if (displayingQuestion == false)
+        if (!quizCompleted)
         {
-            displayingQuestion = true;
-            //questionNumber = Random.Range(1, 5);
+            if (!displayingQuestion)
+            {
+                displayingQuestion = true;
+
+                //questionNumber = Random.Range(1, 5);
                 if (questionNumber == 1)
                 {
 
@@ -64,15 +67,20 @@ public class QuestionGenerate : MonoBehaviour
                     actualAnswer = "Α";
                 }
 
-            questionNumber++;
+                questionNumber++;
 
-          /*  if (questionNumber > 4)
-            {
-                questionNumber = 1;
-            } */
+                if (questionNumber > totalQuestions)
+                {
+                    quizCompleted = true;
+                }
+                /*  if (questionNumber > 4)
+                  {
+                      questionNumber = 1;
+                  } */
 
-            // all question go above this line
-           QuestionDisplay.pleaseUpdate = false;
+                // all question go above this line
+                QuestionDisplay.pleaseUpdate = false;
+            }
         }
     }
 }

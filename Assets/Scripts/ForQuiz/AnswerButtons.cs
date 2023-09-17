@@ -31,6 +31,9 @@ public class AnswerButtons : MonoBehaviour
 
     public GameObject currentScore;
     public int scoreValue;
+    public int bestScore = 70;
+    public GameObject score;
+    public int curScore;
     //public int bestScore;
     //public GameObject bestDisplay;
  
@@ -41,9 +44,12 @@ public class AnswerButtons : MonoBehaviour
     } */
 
     void Update()
-    {
+    {   
+        curScore = scoreValue;
         currentScore.GetComponent<Text>().text = "SCORE: " + scoreValue;
+        score.GetComponent<Text>().text = "” œ—: " + curScore + " / " + bestScore;
     }
+
 
 
     public void  AnswerD()
@@ -199,4 +205,6 @@ public class AnswerButtons : MonoBehaviour
 
         QuestionGenerate.displayingQuestion = false;
     }
+ 
 }
+   
