@@ -86,7 +86,7 @@ public class QuestionGenerate : MonoBehaviour
                 {
                     QuestionDisplay.newQuestion = "Ποια απο τις παρακάτω εντολές δηλώνει έναν πραγματικό αριθμό;";
                     QuestionDisplay.newA = "Α. float i";
-                    QuestionDisplay.newB = "Β. int i;";
+                    QuestionDisplay.newB = "Β. int i";
                     QuestionDisplay.newC = "Γ. float i;";
                     QuestionDisplay.newD = "Δ. int i;";
                     actualAnswer = "Γ";
@@ -135,10 +135,10 @@ public class QuestionGenerate : MonoBehaviour
                 if (questionNumber == 11)
                 {
                     QuestionDisplay.newQuestion = "Ποια η έξοδος του παρακάτω προγράμματος;\r\n#include <stdio.h>\r\nint main() {\r\n\tfloat x = 1.2365;\r\n\tprintf(\"Value = %f\\n\", x);\r\n\tprintf(\"Value = %.2f\\n\", x);\r\n\tprintf(\"Value = %.*f\\n\", 3, x);\r\n\tprintf(\"Value = %.f\\n\", x);\r\n\treturn 0;\r\n};";
-                    QuestionDisplay.newA = "Α. Value = 1.236500\r\n   Value = 1.24\r\t   Value = 1.237\r\n   Value = 1;";
-                    QuestionDisplay.newB = "Β. Value = 1.2365\r\n   Value = 1.24\r\t   Value = 1.23\r\n   Value = 0.1";
-                    QuestionDisplay.newC = "Γ. Value = 1.236500\r\n   Value = 1.24\r\t  Value = 1.23\r\n   Value = 1";
-                    QuestionDisplay.newD = "Δ. Value = 1.236500\r\n   Value = 1.24\r\t   Value = 1.237\r\n   Value = 0.1";
+                    QuestionDisplay.newA = "Α. Value = 1.236500\r   Value = 1.24\r\n   Value = 1.237\r\t   Value = 1;";
+                    QuestionDisplay.newB = "Β. Value = 1.2365\r  Value = 1.24\r\n  Value = 1.23\r\t   Value = 0.1";
+                    QuestionDisplay.newC = "Γ. Value = 1.236500\r   Value = 1.24\r\n  Value = 1.23\r\t   Value = 1";
+                    QuestionDisplay.newD = "Δ. Value = 1.236500\r   Value = 1.24\r\n   Value = 1.237\r\t   Value = 0.1";
                     actualAnswer = "Α";
                 }
 
