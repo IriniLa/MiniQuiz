@@ -7,16 +7,21 @@ public class QuestionGenerate : MonoBehaviour
     public static string actualAnswer;
     public static bool displayingQuestion = false;
 
-    public int questionNumber = 1; // Αρχικοποιήστε τον αριθμό της πρώτης ερώτησης.
-    public int totalQuestions = 4; // Ολικός αριθμός ερωτήσεων.
+    public int questionNumber; // Αρχικοποιήστε τον αριθμό της πρώτης ερώτησης.
+    public int totalQuestions = 6; // Ολικός αριθμός ερωτήσεων.
     private bool quizCompleted = false; // Μεταβλητή που υποδεικνύει αν ολοκληρώθηκε το κουίζ.
+
+    public AnswerButtons answerButtons;
+
 
     void Start() // Χρησιμοποιήστε τη μέθοδο Start για την αρχικοποίηση.
     {
         displayingQuestion = false; // Κάντε την ψευδή όταν ξεκινά η σκηνή.
         questionNumber = 1; // Αρχικοποιήστε τον αριθμό της πρώτης ερώτησης.
     }
-    
+
+   
+
     void Update()
     {
         if (!quizCompleted)
@@ -67,7 +72,7 @@ public class QuestionGenerate : MonoBehaviour
                     actualAnswer = "Α";
                 }
 
-                questionNumber++;
+                
 
                 if (questionNumber > totalQuestions)
                 {
@@ -77,10 +82,18 @@ public class QuestionGenerate : MonoBehaviour
                   {
                       questionNumber = 1;
                   } */
-
+               
                 // all question go above this line
                 QuestionDisplay.pleaseUpdate = false;
-            }
+                questionNumber++;
+
+                if(questionNumber == totalQuestions)
+                {
+                    answerButtons.EndQuiz();
+                }
+            } 
+           
         }
+       
     }
 }

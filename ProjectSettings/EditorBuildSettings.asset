@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ZZZ_LEVELSELECT.unity
     guid: c00edd660d9210a4389849b552d90cda
+  - enabled: 1
+    path: Assets/Scenes/Kefalaio_1/Quiz_1.unity
+    guid: 2e85314d92e45084c89c1c3036c56f53
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e2f581253a8581d4c88aa6aaed113161,
       type: 2}

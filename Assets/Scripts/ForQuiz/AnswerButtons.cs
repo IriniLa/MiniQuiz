@@ -33,21 +33,23 @@ public class AnswerButtons : MonoBehaviour
     public int scoreValue;
     public int bestScore = 70;
     public GameObject score;
-    public int curScore;
-    //public int bestScore;
-    //public GameObject bestDisplay;
- 
-   /* void Start()
+    public GameObject rightAnswer;
+    public GameObject wrongAnswer;
+
+    public EndPanelController endPanelController;
+
+    public void EndQuiz()
     {
-        bestScore = PlayerPrefs.GetInt("BestScoreQuiz");
-        bestDisplay.GetComponent<Text>().text = "BEST: " + bestScore;
-    } */
+        // Καλέστε τη μέθοδο ShowEndPanel από το σενάριο EndPanelController
+        endPanelController.ShowResultPanel();
+    }
+
 
     void Update()
-    {   
-        curScore = scoreValue;
-        currentScore.GetComponent<Text>().text = "SCORE: " + scoreValue;
-        score.GetComponent<Text>().text = "ΣΚΟΡ: " + curScore + " / " + bestScore;
+    {
+            currentScore.GetComponent<Text>().text = "SCORE: " + scoreValue;
+            score.GetComponent<Text>().text = "ΣΚΟΡ: " + scoreValue + " / " + bestScore;
+            
     }
 
 
@@ -175,6 +177,8 @@ public class AnswerButtons : MonoBehaviour
         StartCoroutine(NextQuestion());
     }
 
+
+
     IEnumerator NextQuestion()
     {
         /*if (bestScore < scoreValue)
@@ -185,26 +189,28 @@ public class AnswerButtons : MonoBehaviour
         } */
         yield return new WaitForSeconds(2);
 
-        answerDbackGreen.SetActive(false);
-        answerCbackGreen.SetActive(false);
-        answerBbackGreen.SetActive(false);
-        answerAbackGreen.SetActive(false);
-        answerDbackRed.SetActive(false);
-        answerCbackRed.SetActive(false);
-        answerBbackRed.SetActive(false);
-        answerAbackRed.SetActive(false);
-        answerDbackBlue.SetActive(true);
-        answerCbackBlue.SetActive(true);
-        answerBbackBlue.SetActive(true);
-        answerAbackBlue.SetActive(true);
+        
+            answerDbackGreen.SetActive(false);
+            answerCbackGreen.SetActive(false);
+            answerBbackGreen.SetActive(false);
+            answerAbackGreen.SetActive(false);
+            answerDbackRed.SetActive(false);
+            answerCbackRed.SetActive(false);
+            answerBbackRed.SetActive(false);
+            answerAbackRed.SetActive(false);
+            answerDbackBlue.SetActive(true);
+            answerCbackBlue.SetActive(true);
+            answerBbackBlue.SetActive(true);
+            answerAbackBlue.SetActive(true);
 
-        answerD.GetComponent<Button>().enabled = true;
-        answerC.GetComponent<Button>().enabled = true;
-        answerB.GetComponent<Button>().enabled = true;
-        answerA.GetComponent<Button>().enabled = true;
+            answerD.GetComponent<Button>().enabled = true;
+            answerC.GetComponent<Button>().enabled = true;
+            answerB.GetComponent<Button>().enabled = true;
+            answerA.GetComponent<Button>().enabled = true;
 
-        QuestionGenerate.displayingQuestion = false;
+            QuestionGenerate.displayingQuestion = false;
+        
     }
- 
+
 }
    

@@ -2133,7 +2133,7 @@ GameObject:
   - component: {fileID: 957487073}
   - component: {fileID: 957487072}
   m_Layer: 5
-  m_Name: correctAnswerTxt (1)
+  m_Name: wrongAnswerTxt (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2286,8 +2286,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1025045148}
   - component: {fileID: 1025045147}
-  - component: {fileID: 1025045149}
   - component: {fileID: 1025045150}
+  - component: {fileID: 1025045152}
+  - component: {fileID: 1025045153}
   m_Layer: 0
   m_Name: MasterControlGameObj
   m_TagString: Untagged
@@ -2329,20 +2330,6 @@ Transform:
   - {fileID: 151214883}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1025045149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025045146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77f1936289253854593f98fb06af4a50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionNumber: 0
-  totalQuestions: 4
 --- !u!114 &1025045150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2377,7 +2364,37 @@ MonoBehaviour:
   scoreValue: 0
   bestScore: 70
   score: {fileID: 939383839}
-  curScore: 0
+  rightAnswer: {fileID: 843443819}
+  wrongAnswer: {fileID: 957487070}
+  endPanelController: {fileID: 1025045152}
+--- !u!114 &1025045152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025045146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556f53f979d5fcd459d75e32293c4c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultPanel: {fileID: 1255532742}
+--- !u!114 &1025045153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025045146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f1936289253854593f98fb06af4a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionNumber: 0
+  totalQuestions: 6
+  answerButtons: {fileID: 1025045150}
 --- !u!1 &1108156066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,7 +2791,7 @@ GameObject:
   - component: {fileID: 1255532744}
   - component: {fileID: 1255532746}
   m_Layer: 5
-  m_Name: AfterQuizScene(Panel)
+  m_Name: resultPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2841,7 +2858,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255532742}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!114 &1255532746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4086,7 +4103,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1973713713}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1255532746}
+        m_TargetAssemblyTypeName: MainMenu_Buttons, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1973713713
 MonoBehaviour:
   m_ObjectHideFlags: 0
