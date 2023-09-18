@@ -35,6 +35,8 @@ public class AnswerButtons : MonoBehaviour
     public GameObject score;
     public GameObject rightAnswer;
     public GameObject wrongAnswer;
+    public int correctAnswer = 0;
+    public int incorrectAnswer = 0;
 
     public EndPanelController endPanelController;
 
@@ -49,7 +51,10 @@ public class AnswerButtons : MonoBehaviour
     {
             currentScore.GetComponent<Text>().text = "SCORE: " + scoreValue;
             score.GetComponent<Text>().text = "ΣΚΟΡ: " + scoreValue + " / " + bestScore;
-            
+            rightAnswer.GetComponent<Text>().text = "Σωστές Απαντήσεις: " + correctAnswer;
+            wrongAnswer.GetComponent<Text>().text = "Λάθος Απαντήσεις: " + incorrectAnswer;
+
+
     }
 
 
@@ -62,6 +67,7 @@ public class AnswerButtons : MonoBehaviour
             answerDbackBlue.SetActive(false);
             correctFX.Play();
             scoreValue += 5;
+            correctAnswer++;
         }
         else
         {
@@ -76,8 +82,9 @@ public class AnswerButtons : MonoBehaviour
             {
                 scoreValue -= 5;
             }
-            
-            
+            incorrectAnswer++;
+
+
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
@@ -95,6 +102,7 @@ public class AnswerButtons : MonoBehaviour
             answerCbackBlue.SetActive(false);
             correctFX.Play();
             scoreValue += 5;
+            correctAnswer++;
         }
         else
         {
@@ -109,6 +117,7 @@ public class AnswerButtons : MonoBehaviour
             {
                 scoreValue -= 5;
             }
+            incorrectAnswer++;
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
@@ -125,6 +134,7 @@ public class AnswerButtons : MonoBehaviour
             answerBbackBlue.SetActive(false);
             correctFX.Play();
             scoreValue += 5;
+            correctAnswer++;
         }
         else
         {
@@ -139,6 +149,7 @@ public class AnswerButtons : MonoBehaviour
             {
                 scoreValue -= 5;
             }
+            incorrectAnswer++;
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
@@ -155,6 +166,7 @@ public class AnswerButtons : MonoBehaviour
             answerAbackBlue.SetActive(false);
             correctFX.Play();
             scoreValue += 5;
+            correctAnswer++;
         }
         else
         {
@@ -169,6 +181,7 @@ public class AnswerButtons : MonoBehaviour
             {
                 scoreValue -= 5;
             }
+            incorrectAnswer++;
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
