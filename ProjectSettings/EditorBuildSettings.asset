@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Kefalaio_2/Quiz_2.unity
     guid: 4c78de67a4a464947b3b119cdd8e9ea1
   - enabled: 1
+    path: Assets/Scenes/Kefalaio_3/Theoria_3.unity
+    guid: dd3b51d27c423a44493649497a7e4914
+  - enabled: 1
+    path: Assets/Scenes/Kefalaio_3/Quiz_3.unity
+    guid: 74b563cef076bb047ad9655684929d47
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 65cbd0aed51215b4d89382330c249ce5
   - enabled: 0
