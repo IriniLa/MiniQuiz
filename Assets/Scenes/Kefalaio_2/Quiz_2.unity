@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -331,8 +331,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1025045150}
-        m_TargetAssemblyTypeName: AnswerButtons, Assembly-CSharp
+      - m_Target: {fileID: 1025045155}
+        m_TargetAssemblyTypeName: AnswerBtn, Assembly-CSharp
         m_MethodName: AnswerB
         m_Mode: 1
         m_Arguments:
@@ -1851,8 +1851,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1025045150}
-        m_TargetAssemblyTypeName: AnswerButtons, Assembly-CSharp
+      - m_Target: {fileID: 1025045155}
+        m_TargetAssemblyTypeName: AnswerBtn, Assembly-CSharp
         m_MethodName: AnswerA
         m_Mode: 1
         m_Arguments:
@@ -2298,10 +2298,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1025045148}
-  - component: {fileID: 1025045147}
-  - component: {fileID: 1025045150}
-  - component: {fileID: 1025045152}
+  - component: {fileID: 1025045155}
+  - component: {fileID: 1025045154}
   - component: {fileID: 1025045153}
+  - component: {fileID: 1025045156}
   m_Layer: 0
   m_Name: MasterControlGameObj
   m_TagString: Untagged
@@ -2309,23 +2309,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1025045147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025045146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bb87ce3319681a43bb17d50f4940826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  screenQuestion: {fileID: 2141262341}
-  answerA: {fileID: 1368503953}
-  answerB: {fileID: 884119541}
-  answerC: {fileID: 1575652108}
-  answerD: {fileID: 1809768212}
 --- !u!4 &1025045148
 Transform:
   m_ObjectHideFlags: 0
@@ -2343,7 +2326,7 @@ Transform:
   - {fileID: 151214883}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1025045150
+--- !u!114 &1025045153
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2352,37 +2335,69 @@ MonoBehaviour:
   m_GameObject: {fileID: 1025045146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1881ac1563c3cde4ca4e33f0cc3e4dd8, type: 3}
+  m_Script: {fileID: 11500000, guid: acab6feace78c984e9e646c64ae37625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answerDbackBlue: {fileID: 1023675257}
-  answerDbackGreen: {fileID: 882594342}
-  answerDbackRed: {fileID: 736584910}
-  answerCbackBlue: {fileID: 242200053}
-  answerCbackGreen: {fileID: 2124341509}
-  answerCbackRed: {fileID: 350314580}
-  answerBbackBlue: {fileID: 784428419}
-  answerBbackGreen: {fileID: 1112955633}
-  answerBbackRed: {fileID: 1424481867}
-  answerAbackBlue: {fileID: 1787955440}
-  answerAbackGreen: {fileID: 369052594}
-  answerAbackRed: {fileID: 1108156066}
-  answerD: {fileID: 1985240566}
-  answerC: {fileID: 1265886384}
-  answerB: {fileID: 26443921}
-  answerA: {fileID: 861186938}
-  correctFX: {fileID: 1684622822}
-  wrongFX: {fileID: 151214882}
-  currentScore: {fileID: 1177471058}
-  scoreValue: 0
-  bestScore: 70
-  score: {fileID: 939383839}
-  rightAnswer: {fileID: 843443819}
-  wrongAnswer: {fileID: 957487070}
-  correctAnswer: 0
-  incorrectAnswer: 0
-  endPanelController: {fileID: 1025045152}
---- !u!114 &1025045152
+  questionNumber2: 0
+  totalQuestions2: 16
+  answerButtons2: {fileID: 1025045155}
+--- !u!114 &1025045154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025045146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802734c6f59deec4e90df49831f62456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenQuestion2: {fileID: 2141262341}
+  answerA2: {fileID: 1368503953}
+  answerB2: {fileID: 884119541}
+  answerC2: {fileID: 1575652108}
+  answerD2: {fileID: 1809768212}
+--- !u!114 &1025045155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025045146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4ae4281a3a15499322c778d76420c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answerDbackBlue2: {fileID: 1023675257}
+  answerDbackGreen2: {fileID: 882594342}
+  answerDbackRed2: {fileID: 736584910}
+  answerCbackBlue2: {fileID: 242200053}
+  answerCbackGreen2: {fileID: 2124341509}
+  answerCbackRed2: {fileID: 350314580}
+  answerBbackBlue2: {fileID: 784428419}
+  answerBbackGreen2: {fileID: 1112955633}
+  answerBbackRed2: {fileID: 1424481867}
+  answerAbackBlue2: {fileID: 1787955440}
+  answerAbackGreen2: {fileID: 369052594}
+  answerAbackRed2: {fileID: 1108156066}
+  answerD2: {fileID: 1985240566}
+  answerC2: {fileID: 1265886384}
+  answerB2: {fileID: 26443921}
+  answerA2: {fileID: 861186938}
+  correctFX2: {fileID: 1684622822}
+  wrongFX2: {fileID: 151214882}
+  currentScore2: {fileID: 1177471058}
+  scoreValue2: 0
+  bestScore2: 70
+  score2: {fileID: 939383839}
+  rightAnswer2: {fileID: 843443819}
+  wrongAnswer2: {fileID: 957487070}
+  correctAnswer2: 0
+  incorrectAnswer2: 0
+  endPanelController: {fileID: 1025045156}
+--- !u!114 &1025045156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2395,21 +2410,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resultPanel: {fileID: 1255532742}
---- !u!114 &1025045153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025045146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77f1936289253854593f98fb06af4a50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionNumber: 0
-  totalQuestions: 16
-  answerButtons: {fileID: 1025045150}
 --- !u!1 &1108156066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,8 +2972,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1025045150}
-        m_TargetAssemblyTypeName: AnswerButtons, Assembly-CSharp
+      - m_Target: {fileID: 1025045155}
+        m_TargetAssemblyTypeName: AnswerBtn, Assembly-CSharp
         m_MethodName: AnswerC
         m_Mode: 1
         m_Arguments:
@@ -4255,8 +4255,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1025045150}
-        m_TargetAssemblyTypeName: AnswerButtons, Assembly-CSharp
+      - m_Target: {fileID: 1025045155}
+        m_TargetAssemblyTypeName: AnswerBtn, Assembly-CSharp
         m_MethodName: AnswerD
         m_Mode: 1
         m_Arguments:
