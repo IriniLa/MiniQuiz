@@ -114,6 +114,197 @@ int main()
 Σημείωση 5: Η εντολή break τερματίζει άμεσα την εκτέλεση του βρόχου.
 
 
+quiz
+
+(1)H έκφραση if(z) είναι ισοδύναμη με την if(z != 0)
+Α. Σωστό ~
+Β. Λαθος
+Γ. Μη έγκυρη έκφραση
+Δ. Τίποτα απο τα δύο
+
+(2) H έκφραση if(!z) δεν είναι ισοδύναμη με την if(z == 0)
+Α. Σωστό
+Β. Λάθος ~
+Γ. Μη έγκυρη έκφραση 
+Δ. Τίποτα απο τα παραπάνω 
+
+(3) Ποιά είναι η έξοδος του προγράμματος;
+#inlcude <stdio.h>
+int main() {
+	int i = 0;
+	if (i = 0) {
+		printf("i equals to zero!\n");
+	}
+	return 0;
+}
+
+Α. i = 0 
+Β. 0 equals to zero
+Γ. i equals to zero
+Δ. το πρόγραμμα δεν θα εμφανίσει τίποτα ~
+
+(4) Ποιά είναι η έξοδος του παρακάτω προγράμματος;
+
+#include <stdio.h>
+int main() {
+	int x = 0;
+	if (x = 0) {
+		printf("x equals to zero\n");
+	}
+	else {
+		printf("x  EQUALS TO ZERO\n");
+	}
+	return 0;
+}
+    
+Α. x equals to zero
+Β. 0 equals to zero
+Γ. x EQUALS TO ZERO ~
+Δ. το πρόγραμμα δεν θα εμφανίσει τίποτα
+
 	  
+(5) Ποιά θα είναι η συνθήκη στην  if εαν θέλουμε να εμφανίσουμε την απόλυτη τιμή ενός ακέραιου αριθμού;
+#include <stdio.h>
+int main() {
+	int number;
+	printf("Enter number: ");
+	scanf("%d", &number);
+	
+	if(....... ) {
+		printf("The absolute value is %d\n", number);
+	}
+	else {
+		printf("The absolute value is %d\n", -number);
+	}
+
+	return 0;
+}
+
+Α. number >= 0 ~
+Β. number <= 0
+Γ. number == 0
+Δ. number != 0
+
+
+(6) Ποιά είναι η έξοδος του παρακάτω προγράμματος;
+#include <stdio.h>
+int main() {
+	int x = 1, y = 2;
+	if (x && x/y) {
+		printf("Yes\n"); 
+	}
+	else {
+		printf("No\n"); 
+	}
+	return 0;
+}
+
+Α. Yes
+Β. Yes
+   No
+Γ. Το πρόγραμμα δεν θα εμφανίσει τίποτα γιατί είναι λάθος η συνθήκη.
+Δ. No ~
+
+(7) Ποιά είναι η έξοδος του παρακάτω προγράμματος;
+#include <stdio.h>
+int main() {
+	float i = 1.2;
+
+	if(i == 1.2) {
+		printf("Yes\n");
+	}
+	else {
+		printf("No\n");	
+
+	return 0;
+}
+
+Α. Yes
+Β. No ~
+Γ. Τίποτα γιατί η συνθήκη είναι λάθος.
+Δ. Τίποτα απο τα παραπάνω.
+
+
+(8) Ποια είναι η έξοδος του προγράμματος;
+#include <stdio.h>
+int main() {
+	int x, y;
+	x = y = 19;
+	if(++x == y++) {
+		printf("One\n");
+	}
+	else {
+		printf("Two\n");
+	}
+	printf("%d %d\n", x, y);	
+	return 0;
+}
+
+Α. One 
+   20 20
+Β. Two
+   19 20
+Γ. Two
+   20 19
+Δ. Two ~
+   20 20
+
+
+(9) Ποιά είναι η έξοδος του προγράμματος;
+#include <stdio.h>
+int main() {
+	int x = 2, y = 5, z = 3;
+	if (x < y < z) {
+		printf("One\n");
+	}
+	else {
+		printf("Two\n");
+	}
+	return 0;
+}
+
+Α. Two 
+Β. One ~
+Γ. Τίποτα απο τα δυο.
+Δ. Η συνθήκη είναι λάθος το πρόγραμμα δεν εμφανίζει τίποτα.
+
+(10) Ποιά είναι η έξοδος του παραπάνω προγράμματος αν το number είναι 12;
+#include <stdio.h>
+int main() {
+	int x;
+	printf("Enter number: ");
+	scanf("%d, &number");
+	(x > 10) ? printf("One\n"); : printf("Two\n");	
+
+	return 0;
+}
+
+Α. x > 10
+Β. Two 
+Γ. One ~
+Δ. τίποτα απο τα παραπάνω
+
+(11) Ποιά είναι η έξοδος του παρακάτω προγράμματος;
+#include <stdio.h>
+int main() {
+	int i = 1;
+	switch(i) {
+		case 1:
+			printf("One\n");
+		return 0;
+		case 2:
+			printf("Two\n");
+		break;		}
+	}
+	printf("End\n");
+	return 0;
+}
+ 
+Α. One
+   End
+Β. One End
+Γ. Two 
+   End
+Δ. One ~
 
 
