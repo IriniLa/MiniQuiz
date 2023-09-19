@@ -331,8 +331,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1025045155}
-        m_TargetAssemblyTypeName: AnswerBtn, Assembly-CSharp
+      - m_Target: {fileID: 1025045160}
+        m_TargetAssemblyTypeName: AnswerBt, Assembly-CSharp
         m_MethodName: AnswerB
         m_Mode: 1
         m_Arguments:
@@ -1851,8 +1851,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1025045155}
-        m_TargetAssemblyTypeName: AnswerBtn, Assembly-CSharp
+      - m_Target: {fileID: 1025045160}
+        m_TargetAssemblyTypeName: AnswerBt, Assembly-CSharp
         m_MethodName: AnswerA
         m_Mode: 1
         m_Arguments:
@@ -2298,10 +2298,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1025045148}
-  - component: {fileID: 1025045155}
-  - component: {fileID: 1025045154}
-  - component: {fileID: 1025045153}
-  - component: {fileID: 1025045156}
+  - component: {fileID: 1025045159}
+  - component: {fileID: 1025045158}
+  - component: {fileID: 1025045157}
+  - component: {fileID: 1025045160}
   m_Layer: 0
   m_Name: MasterControlGameObj
   m_TagString: Untagged
@@ -2326,78 +2326,7 @@ Transform:
   - {fileID: 151214883}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1025045153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025045146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acab6feace78c984e9e646c64ae37625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionNumber2: 0
-  totalQuestions2: 16
-  answerButtons2: {fileID: 1025045155}
---- !u!114 &1025045154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025045146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 802734c6f59deec4e90df49831f62456, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  screenQuestion2: {fileID: 2141262341}
-  answerA2: {fileID: 1368503953}
-  answerB2: {fileID: 884119541}
-  answerC2: {fileID: 1575652108}
-  answerD2: {fileID: 1809768212}
---- !u!114 &1025045155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025045146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cc4ae4281a3a15499322c778d76420c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  answerDbackBlue2: {fileID: 1023675257}
-  answerDbackGreen2: {fileID: 882594342}
-  answerDbackRed2: {fileID: 736584910}
-  answerCbackBlue2: {fileID: 242200053}
-  answerCbackGreen2: {fileID: 2124341509}
-  answerCbackRed2: {fileID: 350314580}
-  answerBbackBlue2: {fileID: 784428419}
-  answerBbackGreen2: {fileID: 1112955633}
-  answerBbackRed2: {fileID: 1424481867}
-  answerAbackBlue2: {fileID: 1787955440}
-  answerAbackGreen2: {fileID: 369052594}
-  answerAbackRed2: {fileID: 1108156066}
-  answerD2: {fileID: 1985240566}
-  answerC2: {fileID: 1265886384}
-  answerB2: {fileID: 26443921}
-  answerA2: {fileID: 861186938}
-  correctFX2: {fileID: 1684622822}
-  wrongFX2: {fileID: 151214882}
-  currentScore2: {fileID: 1177471058}
-  scoreValue2: 0
-  bestScore2: 70
-  score2: {fileID: 939383839}
-  rightAnswer2: {fileID: 843443819}
-  wrongAnswer2: {fileID: 957487070}
-  correctAnswer2: 0
-  incorrectAnswer2: 0
-  endPanelController: {fileID: 1025045156}
---- !u!114 &1025045156
+--- !u!114 &1025045157
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2410,6 +2339,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resultPanel: {fileID: 1255532742}
+--- !u!114 &1025045158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025045146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7d65889e744b4489db8db618e01138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionNumber3: 0
+  totalQuestions3: 16
+  AnswerButtons3: {fileID: 1025045160}
+--- !u!114 &1025045159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025045146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c338beb332da89489cefb000c64e5b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenQuestion3: {fileID: 2141262341}
+  answerA3: {fileID: 1368503953}
+  answerB3: {fileID: 884119541}
+  answerC3: {fileID: 1575652108}
+  answerD3: {fileID: 1809768212}
+--- !u!114 &1025045160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025045146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac223fa8e94380044ad33dbc69c9dd73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answerDbackBlue3: {fileID: 1023675257}
+  answerDbackGreen3: {fileID: 882594342}
+  answerDbackRed3: {fileID: 736584910}
+  answerCbackBlue3: {fileID: 242200053}
+  answerCbackGreen3: {fileID: 2124341509}
+  answerCbackRed3: {fileID: 350314580}
+  answerBbackBlue3: {fileID: 784428419}
+  answerBbackGreen3: {fileID: 1112955633}
+  answerBbackRed3: {fileID: 1424481867}
+  answerAbackBlue3: {fileID: 1787955440}
+  answerAbackGreen3: {fileID: 369052594}
+  answerAbackRed3: {fileID: 1108156066}
+  answerD3: {fileID: 1985240566}
+  answerC3: {fileID: 1265886384}
+  answerB3: {fileID: 26443921}
+  answerA3: {fileID: 861186938}
+  correctFX3: {fileID: 1684622822}
+  wrongFX3: {fileID: 151214882}
+  currentScore3: {fileID: 1177471058}
+  scoreValue3: 0
+  bestScore3: 70
+  score3: {fileID: 939383839}
+  rightAnswer3: {fileID: 843443819}
+  wrongAnswer3: {fileID: 957487070}
+  correctAnswer3: 0
+  incorrectAnswer3: 0
+  endPanelController: {fileID: 1025045157}
 --- !u!1 &1108156066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,8 +2972,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1025045155}
-        m_TargetAssemblyTypeName: AnswerBtn, Assembly-CSharp
+      - m_Target: {fileID: 1025045160}
+        m_TargetAssemblyTypeName: AnswerBt, Assembly-CSharp
         m_MethodName: AnswerC
         m_Mode: 1
         m_Arguments:
@@ -4255,8 +4255,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1025045155}
-        m_TargetAssemblyTypeName: AnswerBtn, Assembly-CSharp
+      - m_Target: {fileID: 1025045160}
+        m_TargetAssemblyTypeName: AnswerBt, Assembly-CSharp
         m_MethodName: AnswerD
         m_Mode: 1
         m_Arguments:
