@@ -2299,9 +2299,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1025045148}
   - component: {fileID: 1025045159}
-  - component: {fileID: 1025045158}
   - component: {fileID: 1025045157}
   - component: {fileID: 1025045160}
+  - component: {fileID: 1025045161}
   m_Layer: 0
   m_Name: MasterControlGameObj
   m_TagString: Untagged
@@ -2339,21 +2339,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resultPanel: {fileID: 1255532742}
---- !u!114 &1025045158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025045146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc7d65889e744b4489db8db618e01138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionNumber3: 0
-  totalQuestions3: 16
-  AnswerButtons3: {fileID: 1025045160}
 --- !u!114 &1025045159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2403,13 +2388,28 @@ MonoBehaviour:
   wrongFX3: {fileID: 151214882}
   currentScore3: {fileID: 1177471058}
   scoreValue3: 0
-  bestScore3: 70
+  bestScore3: 40
   score3: {fileID: 939383839}
   rightAnswer3: {fileID: 843443819}
   wrongAnswer3: {fileID: 957487070}
   correctAnswer3: 0
   incorrectAnswer3: 0
   endPanelController: {fileID: 1025045157}
+--- !u!114 &1025045161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025045146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7d65889e744b4489db8db618e01138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionNumber3: 0
+  totalQuestions3: 10
+  AnswerButtons3: {fileID: 1025045160}
 --- !u!1 &1108156066
 GameObject:
   m_ObjectHideFlags: 0

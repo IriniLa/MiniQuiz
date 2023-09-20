@@ -31,7 +31,7 @@ public class AnswerBtn : MonoBehaviour
 
     public GameObject currentScore2;
     public int scoreValue2;
-    public int bestScore2 = 70;
+    public int bestScore2 = 55;
     public GameObject score2;
     public GameObject rightAnswer2;
     public GameObject wrongAnswer2;
@@ -74,14 +74,14 @@ public class AnswerBtn : MonoBehaviour
             answerDbackRed2.SetActive(true);
             answerDbackBlue2.SetActive(false);
             wrongFX2.Play();
-            if (scoreValue2 == 0)
+            /*if (scoreValue2 == 0)
             {
                 scoreValue2 = 0;
             }
             else
             {
                 scoreValue2 -= 5;
-            }
+            } */
             incorrectAnswer2++;
 
 
@@ -109,14 +109,14 @@ public class AnswerBtn : MonoBehaviour
             answerCbackRed2.SetActive(true);
             answerCbackBlue2.SetActive(false);
             wrongFX2.Play();
-            if (scoreValue2 == 0)
+            /*if (scoreValue2 == 0)
             {
                 scoreValue2 = 0;
             }
             else
             {
                 scoreValue2 -= 5;
-            }
+            } */
             incorrectAnswer2++;
         }
         answerD2.GetComponent<Button>().enabled = false;
@@ -141,14 +141,14 @@ public class AnswerBtn : MonoBehaviour
             answerBbackRed2.SetActive(true);
             answerBbackBlue2.SetActive(false);
             wrongFX2.Play();
-            if (scoreValue2 == 0)
+            /* if (scoreValue2 == 0)
             {
                 scoreValue2 = 0;
             }
             else
             {
                 scoreValue2 -= 5;
-            }
+            } */
             incorrectAnswer2++;
         }
         answerD2.GetComponent<Button>().enabled = false;
@@ -173,14 +173,14 @@ public class AnswerBtn : MonoBehaviour
             answerAbackRed2.SetActive(true);
             answerAbackBlue2.SetActive(false);
             wrongFX2.Play();
-            if (scoreValue2 == 0)
+            /*if (scoreValue2 == 0)
             {
                 scoreValue2 = 0;
             }
             else
             {
                 scoreValue2 -= 5;
-            }
+            } */
             incorrectAnswer2++;
         }
         answerD2.GetComponent<Button>().enabled = false;

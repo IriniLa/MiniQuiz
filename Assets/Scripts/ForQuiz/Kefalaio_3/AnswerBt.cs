@@ -31,7 +31,7 @@ public class AnswerBt : MonoBehaviour
 
     public GameObject currentScore3;
     public int scoreValue3;
-    public int bestScore3 = 70;
+    public int bestScore3 = 40;
     public GameObject score3;
     public GameObject rightAnswer3;
     public GameObject wrongAnswer3;
@@ -74,14 +74,14 @@ public class AnswerBt : MonoBehaviour
             answerDbackRed3.SetActive(true);
             answerDbackBlue3.SetActive(false);
             wrongFX3.Play();
-            if (scoreValue3 == 0)
+            /*if (scoreValue3 == 0)
             {
                 scoreValue3 = 0;
             }
             else
             {
                 scoreValue3 -= 5;
-            }
+            } */
             incorrectAnswer3++;
 
 
@@ -109,14 +109,14 @@ public class AnswerBt : MonoBehaviour
             answerCbackRed3.SetActive(true);
             answerCbackBlue3.SetActive(false);
             wrongFX3.Play();
-            if (scoreValue3 == 0)
+            /*if (scoreValue3 == 0)
             {
                 scoreValue3 = 0;
             }
             else
             {
                 scoreValue3 -= 5;
-            }
+            } */
             incorrectAnswer3++;
         }
         answerD3.GetComponent<Button>().enabled = false;
@@ -141,14 +141,14 @@ public class AnswerBt : MonoBehaviour
             answerBbackRed3.SetActive(true);
             answerBbackBlue3.SetActive(false);
             wrongFX3.Play();
-            if (scoreValue3 == 0)
+            /*if (scoreValue3 == 0)
             {
                 scoreValue3 = 0;
             }
             else
             {
                 scoreValue3 -= 5;
-            }
+            } */
             incorrectAnswer3++;
         }
         answerD3.GetComponent<Button>().enabled = false;
@@ -173,14 +173,14 @@ public class AnswerBt : MonoBehaviour
             answerAbackRed3.SetActive(true);
             answerAbackBlue3.SetActive(false);
             wrongFX3.Play();
-            if (scoreValue3 == 0)
+            /* if (scoreValue3 == 0)
             {
                 scoreValue3 = 0;
             }
             else
             {
                 scoreValue3 -= 5;
-            }
+            } */
             incorrectAnswer3++;
         }
         answerD3.GetComponent<Button>().enabled = false;

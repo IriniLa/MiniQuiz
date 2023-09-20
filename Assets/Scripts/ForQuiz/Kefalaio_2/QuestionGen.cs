@@ -8,7 +8,7 @@ public class QuestionGen : MonoBehaviour
     public static bool displayingQuestion2 = false;
 
     public int questionNumber2; // Αρχικοποιήστε τον αριθμό της πρώτης ερώτησης.
-    public int totalQuestions2 = 16; // Ολικός αριθμός ερωτήσεων.
+    public int totalQuestions2 = 13; // Ολικός αριθμός ερωτήσεων.
     private bool quizCompleted2 = false; // Μεταβλητή που υποδεικνύει αν ολοκληρώθηκε το κουίζ.
 
     public AnswerBtn answerButtons2;
@@ -34,143 +34,114 @@ public class QuestionGen : MonoBehaviour
                 if (questionNumber2 == 1)
                 {
 
-                    QuestionDis.newQuestion2 = "Ποια απο τις παρακάτω εντολές τυπώνει το \"Hello World!\" στην οθόνη;";
-                    QuestionDis.newA2 = "Α. print(\"Hello World\");";
-                    QuestionDis.newB2 = "Β. printf(\"Hello World!\");";
-                    QuestionDis.newC2 = "Γ. printf(\"Hello World!\")";
-                    QuestionDis.newD2 = "Δ. printf(Hello World!);";
-                    actualAnswer2 = "Β";
+                    QuestionDis.newQuestion2 = "H έκφραση if(z) είναι ισοδύναμη με την if(z != 0)";
+                    QuestionDis.newA2 = "Α. Σωστό";
+                    QuestionDis.newB2 = "Β. Λαθος";
+                    QuestionDis.newC2 = "Γ. Μη έγκυρη έκφραση";
+                    QuestionDis.newD2 = "Δ. Τίποτα απο τα δύο";
+                    actualAnswer2 = "Α";
                 }
 
                 if (questionNumber2 == 2)
                 {
-                    QuestionDis.newQuestion2 = "Ποιον τύπο δεδομένων χρησιμοποιούμε για την δήλωση ακεραίων μεταβλητών;";
-                    QuestionDis.newA2 = "Α. char";
-                    QuestionDis.newB2 = "Β. float";
-                    QuestionDis.newC2 = "Γ. int";
-                    QuestionDis.newD2 = "Δ. double";
-                    actualAnswer2 = "Γ";
+                    QuestionDis.newQuestion2 = "H έκφραση if(!z) δεν είναι ισοδύναμη με την if(z == 0)";
+                    QuestionDis.newA2 = "Α. Σωστό";
+                    QuestionDis.newB2 = "Β. Λάθος";
+                    QuestionDis.newC2 = "Γ. Μη έγκυρη έκφραση";
+                    QuestionDis.newD2 = "Δ. Τίποτα απο τα παραπάνω";
+                    actualAnswer2 = "Β";
                 }
 
                 if (questionNumber2 == 3)
                 {
-                    QuestionDis.newQuestion2 = "Ποιον τύπο δεδομένων χρησιμοποιούμε για την δήλωση πραγματικών μεταβλητων;";
-                    QuestionDis.newA2 = "Α. char";
-                    QuestionDis.newB2 = "Β. float";
-                    QuestionDis.newC2 = "Γ. int";
-                    QuestionDis.newD2 = "Δ. κανένα απο τα παραπάνω";
-                    actualAnswer2 = "Β";
+                    QuestionDis.newQuestion2 = "Ποιά είναι η έξοδος του προγράμματος;\r\n#inlcude <stdio.h>\r\nint main() {\r\n\tint i = 0;\r\n\tif (i = 0) {\r\n\t\tprintf(\"i equals to zero!\\n\");\r\n\t}\r\n\treturn 0;\r\n}";
+                    QuestionDis.newA2 = "Α. i = 0";
+                    QuestionDis.newB2 = "Β. 0 equals to zero";
+                    QuestionDis.newC2 = "Γ. i equals to zero";
+                    QuestionDis.newD2 = "Δ. το πρόγραμμα δεν θα εμφανίσει τίποτα";
+                    actualAnswer2 = "Δ";
                 }
 
                 if (questionNumber2 == 4)
                 {
-                    QuestionDis.newQuestion2 = "Ποια ακολουθία διαφυγής χρησιμοποιούμε για να αλλάξουμε γραμμή;";
-                    QuestionDis.newA2 = "Α. \\n";
-                    QuestionDis.newB2 = "Β. \\b";
-                    QuestionDis.newC2 = "Γ. \\t";
-                    QuestionDis.newD2 = "Δ. \\\"";
-                    actualAnswer2 = "Α";
+                    QuestionDis.newQuestion2 = "Ποιά είναι η έξοδος του παρακάτω προγράμματος;\r\n\r\n#include <stdio.h>\r\nint main() {\r\n\tint x = 0;\r\n\tif (x = 0) {\r\n\t\tprintf(\"x equals to zero\\n\");\r\n\t}\r\n\telse {\r\n\t\tprintf(\"x  EQUALS TO ZERO\\n\");\r\n\t}\r\n\treturn 0;\r\n}";
+                    QuestionDis.newA2 = "Α. x equals to zero";
+                    QuestionDis.newB2 = "Β. 0 equals to zero";
+                    QuestionDis.newC2 = "Γ. x EQUALS TO ZERO";
+                    QuestionDis.newD2 = "Δ. το πρόγραμμα δεν θα εμφανίσει τίποτα";
+                    actualAnswer2 = "Γ";
                 }
 
                 if (questionNumber2 == 5)
                 {
-                    QuestionDis.newQuestion2 = "Ποια απο τις παρακάτω εντολές διαβάζει έναν ακέραιο αριθμό και τον αποθηκεύει στην μεταβλητη i;";
-                    QuestionDis.newA2 = "Α. scanf(\"%d\",&i)";
-                    QuestionDis.newB2 = "Β. scan(\"%d\", &i);";
-                    QuestionDis.newC2 = "Γ. scanf(\"%f\", &i);";
-                    QuestionDis.newD2 = "Δ. scanf(\"%d\", &i);";
-                    actualAnswer2 = "Δ";
+                    QuestionDis.newQuestion2 = "Ποιά θα είναι η συνθήκη στην  if εαν θέλουμε να εμφανίσουμε την απόλυτη τιμή ενός ακέραιου αριθμού;\r\n#include <stdio.h>\r\nint main() {\r\n\tint number;\r\n\tprintf(\"Enter number: \");\r\n\tscanf(\"%d\", &number);\r\n\t\r\n\tif(....... ) {\r\n\t\tprintf(\"The absolute value is %d\\n\", number);\r\n\t}\r\n\telse {\r\n\t\tprintf(\"The absolute value is %d\\n\", -number);\r\n\t}\r\n\r\n\treturn 0;\r\n}";
+                    QuestionDis.newA2 = "Α. number >= 0";
+                    QuestionDis.newB2 = "Β. number <= 0";
+                    QuestionDis.newC2 = "Γ. number == 0";
+                    QuestionDis.newD2 = "Δ. number != 0";
+                    actualAnswer2 = "Α";
                 }
 
                 if (questionNumber2 == 6)
                 {
-                    QuestionDis.newQuestion2 = "Ποια απο τις παρακάτω εντολές δηλώνει έναν πραγματικό αριθμό;";
-                    QuestionDis.newA2 = "Α. float i";
-                    QuestionDis.newB2 = "Β. int i";
-                    QuestionDis.newC2 = "Γ. float i;";
-                    QuestionDis.newD2 = "Δ. int i;";
-                    actualAnswer2 = "Γ";
+                    QuestionDis.newQuestion2 = "Ποιά είναι η έξοδος του παρακάτω προγράμματος;\r\n#include <stdio.h>\r\nint main() {\r\n\tint x = 1, y = 2;\r\n\tif (x && x/y) {\r\n\t\tprintf(\"Yes\\n\"); \r\n\t}\r\n\telse {\r\n\t\tprintf(\"No\\n\"); \r\n\t}\r\n\treturn 0;\r\n}";
+                    QuestionDis.newA2 = "Α. Yes";
+                    QuestionDis.newB2 = "Β. Yes\nNo";
+                    QuestionDis.newC2 = "Γ. Τίποτα γιατί είναι λάθος η συνθήκη.";
+                    QuestionDis.newD2 = "Δ. No";
+                    actualAnswer2 = "Δ";
                 }
 
                 if (questionNumber2 == 7)
                 {
-                    QuestionDis.newQuestion2 = "Ποια απο τις παρακάτω εντολές δηλώνει μια μεταβλητή ως σταθερα;";
-                    QuestionDis.newA2 = "Α. int x;";
-                    QuestionDis.newB2 = "Β. const int x;";
-                    QuestionDis.newC2 = "Γ. const x = 5;";
-                    QuestionDis.newD2 = "Δ. const int x = 5;";
-                    actualAnswer2 = "Δ";
+                    QuestionDis.newQuestion2 = "Ποιά είναι η έξοδος του παρακάτω προγράμματος;\r\n#include <stdio.h>\r\nint main() {\r\n\tfloat i = 1.2;\r\n\r\n\tif(i == 1.2) {\r\n\t\tprintf(\"Yes\\n\");\r\n\t}\r\n\telse {\r\n\t\tprintf(\"No\\n\");\t\r\n\r\n\treturn 0;\r\n}\r\n";
+                    QuestionDis.newA2 = "Α. Yes";
+                    QuestionDis.newB2 = "Β. No";
+                    QuestionDis.newC2 = "Γ. Τίποτα γιατί η συνθήκη είναι λάθος.";
+                    QuestionDis.newD2 = "Δ. Τίποτα απο τα παραπάνω.";
+                    actualAnswer2 = "Β";
                 }
 
                 if (questionNumber2 == 8)
                 {
-                    QuestionDis.newQuestion2 = "Ποιές απο τις παρακάτω εντολές δηλώνει μια μακροεντολή;";
-                    QuestionDis.newA2 = "Α. #define SIZE 100;";
-                    QuestionDis.newB2 = "Β. #define SIZE;";
-                    QuestionDis.newC2 = "Γ. #define SIZE 100";
-                    QuestionDis.newD2 = "Δ. #define SIZE";
-                    actualAnswer2 = "Γ";
+                    QuestionDis.newQuestion2 = "Ποια είναι η έξοδος του προγράμματος;\r\n#include <stdio.h>\r\nint main() {\r\n\tint x, y;\r\n\tx = y = 19;\r\n\tif(++x == y++) {\r\n\t\tprintf(\"One\\n\");\r\n\t}\r\n\telse {\r\n\t\tprintf(\"Two\\n\");\r\n\t}\r\n\tprintf(\"%d %d\\n\", x, y);\t\r\n\treturn 0;\r\n}";
+                    QuestionDis.newA2 = "Α. One \r\n 20 20";
+                    QuestionDis.newB2 = "Β. Two\r\n 19 20";
+                    QuestionDis.newC2 = "Γ. Two\r\n 20 19";
+                    QuestionDis.newD2 = "Δ. Two\r\n 20 20";
+                    actualAnswer2 = "Δ";
                 }
 
                 if (questionNumber2 == 9)
                 {
-                    QuestionDis.newQuestion2 = "Ποιά είναι η έξοδος του παρακάτω προγράμματος; \r\n #include <stdio.h>\r\nint main () {\r\n\tprintf(\"Hello\\n\");\r\n\tprintf(\"World\");\r\n\treturn 0;\r\n};";
-                    QuestionDis.newA2 = "Α. Hello\r\n   World";
-                    QuestionDis.newB2 = "Β. Hello World";
-                    QuestionDis.newC2 = "Γ. Hello\tworld";
-                    QuestionDis.newD2 = "Δ. \"Hello\" \"World\"";
-                    actualAnswer2 = "Α";
+                    QuestionDis.newQuestion2 = "Ποιά είναι η έξοδος του προγράμματος;\r\n#include <stdio.h>\r\nint main() {\r\n\tint x = 2, y = 5, z = 3;\r\n\tif (x < y < z) {\r\n\t\tprintf(\"One\\n\");\r\n\t}\r\n\telse {\r\n\t\tprintf(\"Two\\n\");\r\n\t}\r\n\treturn 0;\r\n}";
+                    QuestionDis.newA2 = "Α. Two";
+                    QuestionDis.newB2 = "Β. One";
+                    QuestionDis.newC2 = "Γ. Τίποτα η συνθήκη είναι λάθος.";
+                    QuestionDis.newD2 = "Δ. Τίποτα απο τα παραπάνω.";
+                    actualAnswer2 = "Β";
                 }
 
                 if (questionNumber2 == 10)
                 {
-                    QuestionDis.newQuestion2 = "Ποια είναι η έξοδος του παρακάτω προγράμματος;\r\n#inlude <stdio.h>\r\nint main() {\r\n\tint x = 20, y = 10;\r\n\tprintf(\"%d + %d = %d\\n\", x, y, x + y);\r\n\treturn 0;\r\n}";
-                    QuestionDis.newA2 = "Α. %d + %d = %d";
-                    QuestionDis.newB2 = "Β. x + y = x + y";
-                    QuestionDis.newC2 = "Γ. 20 + 10 = 30";
-                    QuestionDis.newD2 = "Δ. x + y = 30";
+                    QuestionDis.newQuestion2 = "Ποιά είναι η έξοδος του παραπάνω προγράμματος αν το number είναι 12;\r\n#include <stdio.h>\r\nint main() {\r\n\tint x;\r\n\tprintf(\"Enter number: \");\r\n\tscanf(\"%d, &number\");\r\n\t(x > 10) ? printf(\"One\\n\"); : printf(\"Two\\n\");\t\r\n\r\n\treturn 0;\r\n}";
+                    QuestionDis.newA2 = "Α. x > 10";
+                    QuestionDis.newB2 = "Β. Two";
+                    QuestionDis.newC2 = "Γ. One";
+                    QuestionDis.newD2 = "Δ. τίποτα απο τα παραπάνω";
                     actualAnswer2 = "Γ";
                 }
 
                 if (questionNumber2 == 11)
                 {
-                    QuestionDis.newQuestion2 = "Ποια η έξοδος του παρακάτω προγράμματος;\r\n#include <stdio.h>\r\nint main() {\r\n\tfloat x = 1.2365;\r\n\tprintf(\"Value = %f\\n\", x);\r\n\tprintf(\"Value = %.2f\\n\", x);\r\n\tprintf(\"Value = %.*f\\n\", 3, x);\r\n\tprintf(\"Value = %.f\\n\", x);\r\n\treturn 0;\r\n};";
-                    QuestionDis.newA2 = "Α. Value = 1.236500\r   Value = 1.24\r\n   Value = 1.237\r\t   Value = 1;";
-                    QuestionDis.newB2 = "Β. Value = 1.2365\r  Value = 1.24\r\n  Value = 1.23\r\t   Value = 0.1";
-                    QuestionDis.newC2 = "Γ. Value = 1.236500\r   Value = 1.24\r\n  Value = 1.23\r\t   Value = 1";
-                    QuestionDis.newD2 = "Δ. Value = 1.236500\r   Value = 1.24\r\n   Value = 1.237\r\t   Value = 0.1";
-                    actualAnswer2 = "Α";
+                    QuestionDis.newQuestion2 = "Ποιά είναι η έξοδος του παρακάτω προγράμματος;\r\n#include <stdio.h>\r\nint main() {\r\n\tint i = 1;\r\n\tswitch(i) {\r\n\t\tcase 1:\r\n\t\t\tprintf(\"One\\n\");\r\n\t\treturn 0;\r\n\t\tcase 2:\r\n\t\t\tprintf(\"Two\\n\");\r\n\t\tbreak;\t\t}\r\n\t}\r\n\tprintf(\"End\\n\");\r\n\treturn 0;\r\n}";
+                    QuestionDis.newA2 = "Α. One\r\nEnd";
+                    QuestionDis.newB2 = "Β. One End";
+                    QuestionDis.newC2 = "Γ. Two\r\nEnd";
+                    QuestionDis.newD2 = "Δ. One";
+                    actualAnswer2 = "Δ";
                 }
 
-                if (questionNumber2 == 12)
-                {
-                    QuestionDis.newQuestion2 = "Ποιός απο τους παρακάτω τελεστές χρησιμοποιείται για την εκχώρηση τιμής σε μία μεταβλητή;";
-                    QuestionDis.newA2 = "Α. ->";
-                    QuestionDis.newB2 = "Β. <-";
-                    QuestionDis.newC2 = "Γ. =";
-                    QuestionDis.newD2 = "Δ. ==";
-                    actualAnswer2 = "Γ";
-                }
-
-                if (questionNumber2 == 13)
-                {
-                    QuestionDis.newQuestion2 = "Ποιό θα είναι το αποτέλεσμα της πράξης 3/2 αν και οι δύο αριθμοί είναι ακέραιοι;";
-                    QuestionDis.newA2 = "Α. 1.5";
-                    QuestionDis.newB2 = "Β. 1.0";
-                    QuestionDis.newC2 = "Γ. 1";
-                    QuestionDis.newD2 = "Δ. τίποτα απο τα παραπάνω";
-                    actualAnswer2 = "Γ";
-                }
-
-                if (questionNumber2 == 14)
-                {
-                    QuestionDis.newQuestion2 = "Ποιά θα είναι η έξοδος του παρακάτω προγράμματος ;\r\n#include <stdio.h>\r\nint main() {\r\n\tint x = 5;\r\n\tx++;\r\n\tprintf(\"%d\\n\", x);\r\n\treturn 0;\r\n}";
-                    QuestionDis.newA2 = "Α. 5";
-                    QuestionDis.newB2 = "Β. 6";
-                    QuestionDis.newC2 = "Γ. 7";
-                    QuestionDis.newD2 = "Δ. x++";
-                    actualAnswer2 = "Β";
-                }
 
                 if (questionNumber2 > totalQuestions2)
                 {

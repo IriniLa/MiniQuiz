@@ -2339,7 +2339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionNumber2: 0
-  totalQuestions2: 16
+  totalQuestions2: 13
   answerButtons2: {fileID: 1025045155}
 --- !u!114 &1025045154
 MonoBehaviour:
@@ -2390,7 +2390,7 @@ MonoBehaviour:
   wrongFX2: {fileID: 151214882}
   currentScore2: {fileID: 1177471058}
   scoreValue2: 0
-  bestScore2: 70
+  bestScore2: 55
   score2: {fileID: 939383839}
   rightAnswer2: {fileID: 843443819}
   wrongAnswer2: {fileID: 957487070}

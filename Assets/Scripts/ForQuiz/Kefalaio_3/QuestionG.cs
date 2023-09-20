@@ -8,7 +8,7 @@ public class QuestionG : MonoBehaviour
     public static bool displayingQuestion3 = false;
 
     public int questionNumber3; // Αρχικοποιήστε τον αριθμό της πρώτης ερώτησης.
-    public int totalQuestions3 = 16; // Ολικός αριθμός ερωτήσεων.
+    public int totalQuestions3 = 10; // Ολικός αριθμός ερωτήσεων.
     private bool quizCompleted3 = false; // Μεταβλητή που υποδεικνύει αν ολοκληρώθηκε το κουίζ.
 
     public AnswerBt AnswerButtons3;
@@ -34,143 +34,85 @@ public class QuestionG : MonoBehaviour
                 if (questionNumber3 == 1)
                 {
 
-                    QuestionD.newQuestion3 = "Ποια απο τις παρακάτω εντολές τυπώνει το \"Hello World!\" στην οθόνη;";
-                    QuestionD.newA3 = "Α. print(\"Hello World\");";
-                    QuestionD.newB3 = "Β. printf(\"Hello World!\");";
-                    QuestionD.newC3 = "Γ. printf(\"Hello World!\")";
-                    QuestionD.newD3 = "Δ. printf(Hello World!);";
+                    QuestionD.newQuestion3 = "Τι θα πρέπει να γράψουμε μέσα στην for ωστε να εμφανίζει τους ακέραιους με αντίστροφη σειρά απο το 5 μέχρι το 1; # include <stdio.h>\r\nint main() {\r\n\tint i;\r\n\tfor(..........) {\r\n\t\tprintf(\"%d \");\t\r\n\t}\r\n\r\n\treturn 0;\r\n}";
+                    QuestionD.newA3 = "Α. (i = 1; i <= 5; i++)";
+                    QuestionD.newB3 = "Β. (i = 5; i >= 1; i--)";
+                    QuestionD.newC3 = "Γ. (i = 5; i >= 1; --i)";
+                    QuestionD.newD3 = "Δ. (i = 1; i <= 5; ++i);";
                     actualAnswer3 = "Β";
                 }
 
                 if (questionNumber3 == 2)
                 {
-                    QuestionD.newQuestion3 = "Ποιον τύπο δεδομένων χρησιμοποιούμε για την δήλωση ακεραίων μεταβλητών;";
-                    QuestionD.newA3 = "Α. char";
-                    QuestionD.newB3 = "Β. float";
-                    QuestionD.newC3 = "Γ. int";
-                    QuestionD.newD3 = "Δ. double";
-                    actualAnswer3 = "Γ";
+                    QuestionD.newQuestion3 = "Όταν ξέρουμε τον αριθμό των επαναλήψεων, ποιόν βρόχο επανάληψης προτιμάμε;";
+                    QuestionD.newA3 = "Α. do-while";
+                    QuestionD.newB3 = "Β. while";
+                    QuestionD.newC3 = "Γ. if";
+                    QuestionD.newD3 = "Δ. for";
+                    actualAnswer3 = "Δ";
                 }
 
                 if (questionNumber3 == 3)
                 {
-                    QuestionD.newQuestion3 = "Ποιον τύπο δεδομένων χρησιμοποιούμε για την δήλωση πραγματικών μεταβλητων;";
-                    QuestionD.newA3 = "Α. char";
-                    QuestionD.newB3 = "Β. float";
-                    QuestionD.newC3 = "Γ. int";
-                    QuestionD.newD3 = "Δ. κανένα απο τα παραπάνω";
+                    QuestionD.newQuestion3 = "Όταν δεν ξέρουμε τον αριθμό των επαναλήψεων, ποιόν βρόχο επανάληψης προτιμάμε;";
+                    QuestionD.newA3 = "Α. do-while";
+                    QuestionD.newB3 = "Β. while";
+                    QuestionD.newC3 = "Γ. if";
+                    QuestionD.newD3 = "Δ. for";
                     actualAnswer3 = "Β";
                 }
 
                 if (questionNumber3 == 4)
                 {
-                    QuestionD.newQuestion3 = "Ποια ακολουθία διαφυγής χρησιμοποιούμε για να αλλάξουμε γραμμή;";
-                    QuestionD.newA3 = "Α. \\n";
-                    QuestionD.newB3 = "Β. \\b";
-                    QuestionD.newC3 = "Γ. \\t";
-                    QuestionD.newD3 = "Δ. \\\"";
+                    QuestionD.newQuestion3 = "Ποιός απο τους παρακάτω βρόχους επανάληψης εκτελείται τουλάχιστον μια φορά;";
+                    QuestionD.newA3 = "Α. do-while";
+                    QuestionD.newB3 = "Β. while";
+                    QuestionD.newC3 = "Γ. if";
+                    QuestionD.newD3 = "Δ. for";
                     actualAnswer3 = "Α";
                 }
 
                 if (questionNumber3 == 5)
                 {
-                    QuestionD.newQuestion3 = "Ποια απο τις παρακάτω εντολές διαβάζει έναν ακέραιο αριθμό και τον αποθηκεύει στην μεταβλητη i;";
-                    QuestionD.newA3 = "Α. scanf(\"%d\",&i)";
-                    QuestionD.newB3 = "Β. scan(\"%d\", &i);";
-                    QuestionD.newC3 = "Γ. scanf(\"%f\", &i);";
-                    QuestionD.newD3 = "Δ. scanf(\"%d\", &i);";
-                    actualAnswer3 = "Δ";
+                    QuestionD.newQuestion3 = "Ποιά είναι η έξοδος του παρακάτω προγράμματος;\r\n#include <stdio.h>\r\nint main() {\r\n\tint x = 5;\r\n\twhile(x != 0) {\r\n\t\tprintf(\"%d \", x);\r\n\t\tx++;\r\n\t}\r\n\treturn 0;\r\n}";
+                    QuestionD.newA3 = "Α. 0 1 2 3 4 5";
+                    QuestionD.newB3 = "Β. 5 4 3 2 1 0";
+                    QuestionD.newC3 = "Γ. 5 4 3 2 1";
+                    QuestionD.newD3 = "Δ. 1 2 3 4 5";
+                    actualAnswer3 = "Γ";
                 }
 
                 if (questionNumber3 == 6)
                 {
-                    QuestionD.newQuestion3 = "Ποια απο τις παρακάτω εντολές δηλώνει έναν πραγματικό αριθμό;";
-                    QuestionD.newA3 = "Α. float i";
-                    QuestionD.newB3 = "Β. int i";
-                    QuestionD.newC3 = "Γ. float i;";
-                    QuestionD.newD3 = "Δ. int i;";
-                    actualAnswer3 = "Γ";
+                    QuestionD.newQuestion3 = "Πόσες φορές εκελείται ο while βρόχος;\r\n#include <stdio.h>\r\nint main() {\r\n\tint a = 256, b = 4;\r\n\twhile(a != b) {\r\n\t\tb = b*b\r\n\t}\r\n\treturn 0;\r\n}";
+                    QuestionD.newA3 = "Α. 3 φορές";
+                    QuestionD.newB3 = "Β. 0 φορές";
+                    QuestionD.newC3 = "Γ. 20 φορές";
+                    QuestionD.newD3 = "Δ. 2 φορές";
+                    actualAnswer3 = "Δ";
                 }
 
                 if (questionNumber3 == 7)
                 {
-                    QuestionD.newQuestion3 = "Ποια απο τις παρακάτω εντολές δηλώνει μια μεταβλητή ως σταθερα;";
-                    QuestionD.newA3 = "Α. int x;";
-                    QuestionD.newB3 = "Β. const int x;";
-                    QuestionD.newC3 = "Γ. const x = 5;";
-                    QuestionD.newD3 = "Δ. const int x = 5;";
-                    actualAnswer3 = "Δ";
+                    QuestionD.newQuestion3 = "Ποιά συνθήκη πρέπει να προστεθεί στη εντολή while ώστε το πρόγραμμα να εμφανίσει τους αριθμούς απο το 1 μέχρι το 5;\r\n#include <stdio.h>\r\nint main() {\r\n\tint x = 1;\r\n\tdo{\r\n\t\tprintf(\"%d\\n\", x);\r\n\t\tx++;\r\n\t} while(.......);\r\n\treturn 0;\r\n}";
+                    QuestionD.newA3 = "Α. i < 5";
+                    QuestionD.newB3 = "Β. i <= 5";
+                    QuestionD.newC3 = "Γ. i <= 5;";
+                    QuestionD.newD3 = "Δ. i < 5;";
+                    actualAnswer3 = "Β";
                 }
 
                 if (questionNumber3 == 8)
                 {
-                    QuestionD.newQuestion3 = "Ποιές απο τις παρακάτω εντολές δηλώνει μια μακροεντολή;";
-                    QuestionD.newA3 = "Α. #define SIZE 100;";
-                    QuestionD.newB3 = "Β. #define SIZE;";
-                    QuestionD.newC3 = "Γ. #define SIZE 100";
-                    QuestionD.newD3 = "Δ. #define SIZE";
-                    actualAnswer3 = "Γ";
+                    QuestionD.newQuestion3 = "Συμπληρώστε τις εντολές ώστε τι πρόγραμμα να εμφανίζει την λέξη \"Correct\" τόσες φορές όσες και ο ακέραιος που θα δωθεί ως είσοδο.\r\n#include <stdio.h>\r\nint main() {\r\n\tint i, number;\r\n\tprintf(\"Enter number: \");\r\n\tscanf(\"%d\", &number);\r\n\ti = 1;\r\n\tdo { ......\r\n\t} while(i <= number);\r\n\treturn 0;\r\n}";
+                    QuestionD.newA3 = "Α. printf(\"Correct\\n\");\r\n   i++";
+                    QuestionD.newB3 = "Β. i++;";
+                    QuestionD.newC3 = "Γ. printf(\"Correct\\n\");";
+                    QuestionD.newD3 = "Δ. printf(\"Correct\\n\"); \r\n   i++;";
+                    actualAnswer3 = "Δ";
                 }
 
-                if (questionNumber3 == 9)
-                {
-                    QuestionD.newQuestion3 = "Ποιά είναι η έξοδος του παρακάτω προγράμματος; \r\n #include <stdio.h>\r\nint main () {\r\n\tprintf(\"Hello\\n\");\r\n\tprintf(\"World\");\r\n\treturn 0;\r\n};";
-                    QuestionD.newA3 = "Α. Hello\r\n   World";
-                    QuestionD.newB3 = "Β. Hello World";
-                    QuestionD.newC3 = "Γ. Hello\tworld";
-                    QuestionD.newD3 = "Δ. \"Hello\" \"World\"";
-                    actualAnswer3 = "Α";
-                }
-
-                if (questionNumber3 == 10)
-                {
-                    QuestionD.newQuestion3 = "Ποια είναι η έξοδος του παρακάτω προγράμματος;\r\n#inlude <stdio.h>\r\nint main() {\r\n\tint x = 20, y = 10;\r\n\tprintf(\"%d + %d = %d\\n\", x, y, x + y);\r\n\treturn 0;\r\n}";
-                    QuestionD.newA3 = "Α. %d + %d = %d";
-                    QuestionD.newB3 = "Β. x + y = x + y";
-                    QuestionD.newC3 = "Γ. 20 + 10 = 30";
-                    QuestionD.newD3 = "Δ. x + y = 30";
-                    actualAnswer3 = "Γ";
-                }
-
-                if (questionNumber3 == 11)
-                {
-                    QuestionD.newQuestion3 = "Ποια η έξοδος του παρακάτω προγράμματος;\r\n#include <stdio.h>\r\nint main() {\r\n\tfloat x = 1.2365;\r\n\tprintf(\"Value = %f\\n\", x);\r\n\tprintf(\"Value = %.2f\\n\", x);\r\n\tprintf(\"Value = %.*f\\n\", 3, x);\r\n\tprintf(\"Value = %.f\\n\", x);\r\n\treturn 0;\r\n};";
-                    QuestionD.newA3 = "Α. Value = 1.236500\r   Value = 1.24\r\n   Value = 1.237\r\t   Value = 1;";
-                    QuestionD.newB3 = "Β. Value = 1.2365\r  Value = 1.24\r\n  Value = 1.23\r\t   Value = 0.1";
-                    QuestionD.newC3 = "Γ. Value = 1.236500\r   Value = 1.24\r\n  Value = 1.23\r\t   Value = 1";
-                    QuestionD.newD3 = "Δ. Value = 1.236500\r   Value = 1.24\r\n   Value = 1.237\r\t   Value = 0.1";
-                    actualAnswer3 = "Α";
-                }
-
-                if (questionNumber3 == 12)
-                {
-                    QuestionD.newQuestion3 = "Ποιός απο τους παρακάτω τελεστές χρησιμοποιείται για την εκχώρηση τιμής σε μία μεταβλητή;";
-                    QuestionD.newA3 = "Α. ->";
-                    QuestionD.newB3 = "Β. <-";
-                    QuestionD.newC3 = "Γ. =";
-                    QuestionD.newD3 = "Δ. ==";
-                    actualAnswer3 = "Γ";
-                }
-
-                if (questionNumber3 == 13)
-                {
-                    QuestionD.newQuestion3 = "Ποιό θα είναι το αποτέλεσμα της πράξης 3/2 αν και οι δύο αριθμοί είναι ακέραιοι;";
-                    QuestionD.newA3 = "Α. 1.5";
-                    QuestionD.newB3 = "Β. 1.0";
-                    QuestionD.newC3 = "Γ. 1";
-                    QuestionD.newD3 = "Δ. τίποτα απο τα παραπάνω";
-                    actualAnswer3 = "Γ";
-                }
-
-                if (questionNumber3 == 14)
-                {
-                    QuestionD.newQuestion3 = "Ποιά θα είναι η έξοδος του παρακάτω προγράμματος ;\r\n#include <stdio.h>\r\nint main() {\r\n\tint x = 5;\r\n\tx++;\r\n\tprintf(\"%d\\n\", x);\r\n\treturn 0;\r\n}";
-                    QuestionD.newA3 = "Α. 5";
-                    QuestionD.newB3 = "Β. 6";
-                    QuestionD.newC3 = "Γ. 7";
-                    QuestionD.newD3 = "Δ. x++";
-                    actualAnswer3 = "Β";
-                }
+               
 
                 if (questionNumber3 > totalQuestions3)
                 {
