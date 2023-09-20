@@ -30,6 +30,10 @@ public class AnswerBtn : MonoBehaviour
     public AudioSource wrongFX2;
 
     public GameObject currentScore2;
+    public GameObject currentQuestion2;
+    public int curQuestion2 = 0;
+
+    public int totalQuestions2 = 11;
     public int scoreValue2;
     public int bestScore2 = 55;
     public GameObject score2;
@@ -50,6 +54,7 @@ public class AnswerBtn : MonoBehaviour
     void Update()
     {
         currentScore2.GetComponent<Text>().text = "SCORE: " + scoreValue2;
+        currentQuestion2.GetComponent<Text>().text = curQuestion2 + " / " + totalQuestions2;
         score2.GetComponent<Text>().text = "ΣΚΟΡ: " + scoreValue2 + " / " + bestScore2;
         rightAnswer2.GetComponent<Text>().text = "Σωστές Απαντήσεις: " + correctAnswer2;
         wrongAnswer2.GetComponent<Text>().text = "Λάθος Απαντήσεις: " + incorrectAnswer2;
@@ -68,6 +73,7 @@ public class AnswerBtn : MonoBehaviour
             correctFX2.Play();
             scoreValue2 += 5;
             correctAnswer2++;
+            curQuestion2++;
         }
         else
         {
@@ -83,6 +89,7 @@ public class AnswerBtn : MonoBehaviour
                 scoreValue2 -= 5;
             } */
             incorrectAnswer2++;
+            curQuestion2++;
 
 
         }
@@ -103,6 +110,7 @@ public class AnswerBtn : MonoBehaviour
             correctFX2.Play();
             scoreValue2 += 5;
             correctAnswer2++;
+            curQuestion2++;
         }
         else
         {
@@ -118,6 +126,7 @@ public class AnswerBtn : MonoBehaviour
                 scoreValue2 -= 5;
             } */
             incorrectAnswer2++;
+            curQuestion2++;
         }
         answerD2.GetComponent<Button>().enabled = false;
         answerC2.GetComponent<Button>().enabled = false;
@@ -135,6 +144,7 @@ public class AnswerBtn : MonoBehaviour
             correctFX2.Play();
             scoreValue2 += 5;
             correctAnswer2++;
+            curQuestion2++;
         }
         else
         {
@@ -150,6 +160,7 @@ public class AnswerBtn : MonoBehaviour
                 scoreValue2 -= 5;
             } */
             incorrectAnswer2++;
+            curQuestion2++;
         }
         answerD2.GetComponent<Button>().enabled = false;
         answerC2.GetComponent<Button>().enabled = false;
@@ -167,6 +178,7 @@ public class AnswerBtn : MonoBehaviour
             correctFX2.Play();
             scoreValue2 += 5;
             correctAnswer2++;
+            curQuestion2++;
         }
         else
         {
@@ -182,6 +194,7 @@ public class AnswerBtn : MonoBehaviour
                 scoreValue2 -= 5;
             } */
             incorrectAnswer2++;
+            curQuestion2++;
         }
         answerD2.GetComponent<Button>().enabled = false;
         answerC2.GetComponent<Button>().enabled = false;

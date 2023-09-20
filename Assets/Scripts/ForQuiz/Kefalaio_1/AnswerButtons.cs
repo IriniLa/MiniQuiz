@@ -30,6 +30,10 @@ public class AnswerButtons : MonoBehaviour
     public AudioSource wrongFX;
 
     public GameObject currentScore;
+    public GameObject currentQuestion;
+    public int curQuestion = 0;
+
+    public int totalQuestions = 14;
     public int scoreValue;
     public int bestScore = 70;
     public GameObject score;
@@ -50,6 +54,7 @@ public class AnswerButtons : MonoBehaviour
     void Update()
     {
             currentScore.GetComponent<Text>().text = "SCORE: " + scoreValue;
+            currentQuestion.GetComponent<Text>().text = curQuestion + " / " + totalQuestions;
             score.GetComponent<Text>().text = "ΣΚΟΡ: " + scoreValue + " / " + bestScore;
             rightAnswer.GetComponent<Text>().text = "Σωστές Απαντήσεις: " + correctAnswer;
             wrongAnswer.GetComponent<Text>().text = "Λάθος Απαντήσεις: " + incorrectAnswer;
@@ -68,21 +73,23 @@ public class AnswerButtons : MonoBehaviour
             correctFX.Play();
             scoreValue += 5;
             correctAnswer++;
+            curQuestion++;
         }
         else
         {
             answerDbackRed.SetActive(true);
             answerDbackBlue.SetActive(false);
             wrongFX.Play();
-            if (scoreValue == 0)
+            /*if (scoreValue == 0)
             {
                 scoreValue = 0;
             }
             else
             {
                 scoreValue -= 5;
-            }
+            } */
             incorrectAnswer++;
+            curQuestion++;
 
 
         }
@@ -103,21 +110,23 @@ public class AnswerButtons : MonoBehaviour
             correctFX.Play();
             scoreValue += 5;
             correctAnswer++;
+            curQuestion++;
         }
         else
         {
             answerCbackRed.SetActive(true);
             answerCbackBlue.SetActive(false);
             wrongFX.Play();
-            if(scoreValue == 0)
+            /*if(scoreValue == 0)
             {
                 scoreValue = 0;
             }
             else
             {
                 scoreValue -= 5;
-            }
+            } */
             incorrectAnswer++;
+            curQuestion++;
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
@@ -135,21 +144,23 @@ public class AnswerButtons : MonoBehaviour
             correctFX.Play();
             scoreValue += 5;
             correctAnswer++;
+            curQuestion++;
         }
         else
         {
             answerBbackRed.SetActive(true);
             answerBbackBlue.SetActive(false);
             wrongFX.Play();
-            if (scoreValue == 0)
+            /*if (scoreValue == 0)
             {
                 scoreValue = 0;
             }
             else
             {
                 scoreValue -= 5;
-            }
+            } */
             incorrectAnswer++;
+            curQuestion++;
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;
@@ -167,21 +178,23 @@ public class AnswerButtons : MonoBehaviour
             correctFX.Play();
             scoreValue += 5;
             correctAnswer++;
+            curQuestion++;
         }
         else
         {
             answerAbackRed.SetActive(true);
             answerAbackBlue.SetActive(false);
             wrongFX.Play();
-            if (scoreValue == 0)
+            /* if (scoreValue == 0)
             {
                 scoreValue = 0;
             }
             else
             {
                 scoreValue -= 5;
-            }
+            } */
             incorrectAnswer++;
+            curQuestion++;
         }
         answerD.GetComponent<Button>().enabled = false;
         answerC.GetComponent<Button>().enabled = false;

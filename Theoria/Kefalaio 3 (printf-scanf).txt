@@ -207,5 +207,9 @@ int main() {
 Δ. printf("Correct\n"); ~
    i++;
 
+public GameObject currentQuestion4;
+public int curQuestion4 = 0;
 
+public int totalQuestions4 = 33;
+currentQuestion4.GetComponent<Text>().text = curQuestion4 + " / " + totalQuestions4;
 
