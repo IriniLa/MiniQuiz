@@ -79,6 +79,26 @@ public class AnswerBut : MonoBehaviour
             answerDbackRed4.SetActive(true);
             answerDbackBlue4.SetActive(false);
             wrongFX4.Play();
+            if (QuestionGene.actualAnswer4 == "Á")
+            {
+                answerAbackGreen4.SetActive(true);
+                answerAbackBlue4.SetActive(false);
+            }
+            else if (QuestionGene.actualAnswer4 == "Â")
+            {
+                answerBbackGreen4.SetActive(true);
+                answerBbackBlue4.SetActive(false);
+            }
+            else if (QuestionGene.actualAnswer4 == "Ã")
+            {
+                answerCbackGreen4.SetActive(true);
+                answerCbackBlue4.SetActive(false);
+            }
+            else
+            {
+                answerDbackGreen4.SetActive(true);
+                answerDbackBlue4.SetActive(false);
+            }
             /*if (scoreValue4 == 0)
             {
                 scoreValue4 = 0;
@@ -116,6 +136,26 @@ public class AnswerBut : MonoBehaviour
             answerCbackRed4.SetActive(true);
             answerCbackBlue4.SetActive(false);
             wrongFX4.Play();
+            if (QuestionGene.actualAnswer4 == "Á")
+            {
+                answerAbackGreen4.SetActive(true);
+                answerAbackBlue4.SetActive(false);
+            }
+            else if (QuestionGene.actualAnswer4 == "Â")
+            {
+                answerBbackGreen4.SetActive(true);
+                answerBbackBlue4.SetActive(false);
+            }
+            else if (QuestionGene.actualAnswer4 == "Ä")
+            {
+                answerDbackGreen4.SetActive(true);
+                answerDbackBlue4.SetActive(false);
+            }
+            else
+            {
+                answerCbackGreen4.SetActive(true);
+                answerCbackBlue4.SetActive(false);
+            }
             /*if (scoreValue4 == 0)
             {
                 scoreValue4 = 0;
@@ -150,6 +190,26 @@ public class AnswerBut : MonoBehaviour
             answerBbackRed4.SetActive(true);
             answerBbackBlue4.SetActive(false);
             wrongFX4.Play();
+            if (QuestionGene.actualAnswer4 == "Á")
+            {
+                answerAbackGreen4.SetActive(true);
+                answerAbackBlue4.SetActive(false);
+            }
+            else if (QuestionGene.actualAnswer4 == "Ã")
+            {
+                answerCbackGreen4.SetActive(true);
+                answerCbackBlue4.SetActive(false);
+            }
+            else if (QuestionGene.actualAnswer4 == "Ä")
+            {
+                answerDbackGreen4.SetActive(true);
+                answerDbackBlue4.SetActive(false);
+            }
+            else
+            {
+                answerBbackGreen4.SetActive(true);
+                answerBbackBlue4.SetActive(false);
+            }
             /*if (scoreValue4 == 0)
             {
                 scoreValue4 = 0;
@@ -184,6 +244,26 @@ public class AnswerBut : MonoBehaviour
             answerAbackRed4.SetActive(true);
             answerAbackBlue4.SetActive(false);
             wrongFX4.Play();
+            if (QuestionGene.actualAnswer4 == "Â")
+            {
+                answerBbackGreen4.SetActive(true);
+                answerBbackBlue4.SetActive(false);
+            }
+            else if (QuestionGene.actualAnswer4 == "Ã")
+            {
+                answerCbackGreen4.SetActive(true);
+                answerCbackBlue4.SetActive(false);
+            }
+            else if (QuestionGene.actualAnswer4 == "Ä")
+            {
+                answerDbackGreen4.SetActive(true);
+                answerDbackBlue4.SetActive(false);
+            }
+            else
+            {
+                answerAbackGreen4.SetActive(true);
+                answerAbackBlue4.SetActive(false);
+            }
             /* if (scoreValue4 == 0)
             {
                 scoreValue4 = 0;

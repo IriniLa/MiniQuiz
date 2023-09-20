@@ -80,6 +80,26 @@ public class AnswerButtons : MonoBehaviour
             answerDbackRed.SetActive(true);
             answerDbackBlue.SetActive(false);
             wrongFX.Play();
+            if (QuestionGenerate.actualAnswer == "Á")
+            {
+                answerAbackGreen.SetActive(true);
+                answerAbackBlue.SetActive(false);
+            }
+            else if (QuestionGenerate.actualAnswer == "Â")
+            {
+                answerBbackGreen.SetActive(true);
+                answerBbackBlue.SetActive(false);
+            }
+            else if (QuestionGenerate.actualAnswer == "Ã")
+            {
+                answerCbackGreen.SetActive(true);
+                answerCbackBlue.SetActive(false);
+            }
+            else
+            {
+                answerDbackGreen.SetActive(true);
+                answerDbackBlue.SetActive(false);
+            }
             /*if (scoreValue == 0)
             {
                 scoreValue = 0;
@@ -117,6 +137,26 @@ public class AnswerButtons : MonoBehaviour
             answerCbackRed.SetActive(true);
             answerCbackBlue.SetActive(false);
             wrongFX.Play();
+            if (QuestionGenerate.actualAnswer == "Á")
+            {
+                answerAbackGreen.SetActive(true);
+                answerAbackBlue.SetActive(false);
+            }
+            else if (QuestionGenerate.actualAnswer == "Â")
+            {
+                answerBbackGreen.SetActive(true);
+                answerBbackBlue.SetActive(false);
+            }
+            else if (QuestionGenerate.actualAnswer == "Ä")
+            {
+                answerDbackGreen.SetActive(true);
+                answerDbackBlue.SetActive(false);
+            }
+            else
+            {
+                answerCbackGreen.SetActive(true);
+                answerCbackBlue.SetActive(false);
+            }
             /*if(scoreValue == 0)
             {
                 scoreValue = 0;
@@ -151,6 +191,26 @@ public class AnswerButtons : MonoBehaviour
             answerBbackRed.SetActive(true);
             answerBbackBlue.SetActive(false);
             wrongFX.Play();
+            if (QuestionGenerate.actualAnswer == "Á")
+            {
+                answerAbackGreen.SetActive(true);
+                answerAbackBlue.SetActive(false);
+            }
+            else if (QuestionGenerate.actualAnswer == "Ã")
+            {
+                answerCbackGreen.SetActive(true);
+                answerCbackBlue.SetActive(false);
+            }
+            else if (QuestionGenerate.actualAnswer == "Ä")
+            {
+                answerDbackGreen.SetActive(true);
+                answerDbackBlue.SetActive(false);
+            }
+            else
+            {
+                answerBbackGreen.SetActive(true);
+                answerBbackBlue.SetActive(false);
+            }
             /*if (scoreValue == 0)
             {
                 scoreValue = 0;
@@ -185,6 +245,26 @@ public class AnswerButtons : MonoBehaviour
             answerAbackRed.SetActive(true);
             answerAbackBlue.SetActive(false);
             wrongFX.Play();
+            if (QuestionGenerate.actualAnswer == "Â")
+            {
+                answerBbackGreen.SetActive(true);
+                answerBbackBlue.SetActive(false);
+            }
+            else if (QuestionGenerate.actualAnswer == "Ã")
+            {
+                answerCbackGreen.SetActive(true);
+                answerCbackBlue.SetActive(false);
+            }
+            else if (QuestionGenerate.actualAnswer == "Ä")
+            {
+                answerDbackGreen.SetActive(true);
+                answerDbackBlue.SetActive(false);
+            }
+            else
+            {
+                answerAbackGreen.SetActive(true);
+                answerAbackBlue.SetActive(false);
+            }
             /* if (scoreValue == 0)
             {
                 scoreValue = 0;

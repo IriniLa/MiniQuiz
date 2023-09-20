@@ -80,6 +80,26 @@ public class AnswerBtn : MonoBehaviour
             answerDbackRed2.SetActive(true);
             answerDbackBlue2.SetActive(false);
             wrongFX2.Play();
+            if (QuestionGen.actualAnswer2 == "Á")
+            {
+                answerAbackGreen2.SetActive(true);
+                answerAbackBlue2.SetActive(false);
+            }
+            else if (QuestionGen.actualAnswer2 == "Â")
+            {
+                answerBbackGreen2.SetActive(true);
+                answerBbackBlue2.SetActive(false);
+            }
+            else if (QuestionGen.actualAnswer2 == "Ã")
+            {
+                answerCbackGreen2.SetActive(true);
+                answerCbackBlue2.SetActive(false);
+            }
+            else
+            {
+                answerDbackGreen2.SetActive(true);
+                answerDbackBlue2.SetActive(false);
+            }
             /*if (scoreValue2 == 0)
             {
                 scoreValue2 = 0;
@@ -117,6 +137,26 @@ public class AnswerBtn : MonoBehaviour
             answerCbackRed2.SetActive(true);
             answerCbackBlue2.SetActive(false);
             wrongFX2.Play();
+            if (QuestionGen.actualAnswer2 == "Á")
+            {
+                answerAbackGreen2.SetActive(true);
+                answerAbackBlue2.SetActive(false);
+            }
+            else if (QuestionGen.actualAnswer2 == "Â")
+            {
+                answerBbackGreen2.SetActive(true);
+                answerBbackBlue2.SetActive(false);
+            }
+            else if (QuestionGen.actualAnswer2 == "Ä")
+            {
+                answerDbackGreen2.SetActive(true);
+                answerDbackBlue2.SetActive(false);
+            }
+            else
+            {
+                answerCbackGreen2.SetActive(true);
+                answerCbackBlue2.SetActive(false);
+            }
             /*if (scoreValue2 == 0)
             {
                 scoreValue2 = 0;
@@ -151,6 +191,26 @@ public class AnswerBtn : MonoBehaviour
             answerBbackRed2.SetActive(true);
             answerBbackBlue2.SetActive(false);
             wrongFX2.Play();
+            if (QuestionGen.actualAnswer2 == "Á")
+            {
+                answerAbackGreen2.SetActive(true);
+                answerAbackBlue2.SetActive(false);
+            }
+            else if (QuestionGen.actualAnswer2 == "Ã")
+            {
+                answerCbackGreen2.SetActive(true);
+                answerCbackBlue2.SetActive(false);
+            }
+            else if (QuestionGen.actualAnswer2 == "Ä")
+            {
+                answerDbackGreen2.SetActive(true);
+                answerDbackBlue2.SetActive(false);
+            }
+            else
+            {
+                answerBbackGreen2.SetActive(true);
+                answerBbackBlue2.SetActive(false);
+            }
             /* if (scoreValue2 == 0)
             {
                 scoreValue2 = 0;
@@ -185,6 +245,26 @@ public class AnswerBtn : MonoBehaviour
             answerAbackRed2.SetActive(true);
             answerAbackBlue2.SetActive(false);
             wrongFX2.Play();
+            if (QuestionGen.actualAnswer2 == "Â")
+            {
+                answerBbackGreen2.SetActive(true);
+                answerBbackBlue2.SetActive(false);
+            }
+            else if (QuestionGen.actualAnswer2 == "Ã")
+            {
+                answerCbackGreen2.SetActive(true);
+                answerCbackBlue2.SetActive(false);
+            }
+            else if (QuestionGen.actualAnswer2 == "Ä")
+            {
+                answerDbackGreen2.SetActive(true);
+                answerDbackBlue2.SetActive(false);
+            }
+            else
+            {
+                answerAbackGreen2.SetActive(true);
+                answerAbackBlue2.SetActive(false);
+            }
             /*if (scoreValue2 == 0)
             {
                 scoreValue2 = 0;

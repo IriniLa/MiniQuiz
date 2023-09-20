@@ -79,6 +79,26 @@ public class AnswerBt : MonoBehaviour
             answerDbackRed3.SetActive(true);
             answerDbackBlue3.SetActive(false);
             wrongFX3.Play();
+            if (QuestionG.actualAnswer3 == "Á")
+            {
+                answerAbackGreen3.SetActive(true);
+                answerAbackBlue3.SetActive(false);
+            }
+            else if (QuestionG.actualAnswer3 == "Â")
+            {
+                answerBbackGreen3.SetActive(true);
+                answerBbackBlue3.SetActive(false);
+            }
+            else if (QuestionG.actualAnswer3 == "Ã")
+            {
+                answerCbackGreen3.SetActive(true);
+                answerCbackBlue3.SetActive(false);
+            }
+            else
+            {
+                answerDbackGreen3.SetActive(true);
+                answerDbackBlue3.SetActive(false);
+            }
             /*if (scoreValue3 == 0)
             {
                 scoreValue3 = 0;
@@ -116,6 +136,26 @@ public class AnswerBt : MonoBehaviour
             answerCbackRed3.SetActive(true);
             answerCbackBlue3.SetActive(false);
             wrongFX3.Play();
+            if (QuestionG.actualAnswer3 == "Á")
+            {
+                answerAbackGreen3.SetActive(true);
+                answerAbackBlue3.SetActive(false);
+            }
+            else if (QuestionG.actualAnswer3 == "Â")
+            {
+                answerBbackGreen3.SetActive(true);
+                answerBbackBlue3.SetActive(false);
+            }
+            else if (QuestionG.actualAnswer3 == "Ä")
+            {
+                answerDbackGreen3.SetActive(true);
+                answerDbackBlue3.SetActive(false);
+            }
+            else
+            {
+                answerCbackGreen3.SetActive(true);
+                answerCbackBlue3.SetActive(false);
+            }
             /*if (scoreValue3 == 0)
             {
                 scoreValue3 = 0;
@@ -150,6 +190,26 @@ public class AnswerBt : MonoBehaviour
             answerBbackRed3.SetActive(true);
             answerBbackBlue3.SetActive(false);
             wrongFX3.Play();
+            if (QuestionG.actualAnswer3 == "Á")
+            {
+                answerAbackGreen3.SetActive(true);
+                answerAbackBlue3.SetActive(false);
+            }
+            else if (QuestionG.actualAnswer3 == "Ã")
+            {
+                answerCbackGreen3.SetActive(true);
+                answerCbackBlue3.SetActive(false);
+            }
+            else if (QuestionG.actualAnswer3 == "Ä")
+            {
+                answerDbackGreen3.SetActive(true);
+                answerDbackBlue3.SetActive(false);
+            }
+            else
+            {
+                answerBbackGreen3.SetActive(true);
+                answerBbackBlue3.SetActive(false);
+            }
             /*if (scoreValue3 == 0)
             {
                 scoreValue3 = 0;
@@ -183,6 +243,26 @@ public class AnswerBt : MonoBehaviour
         {
             answerAbackRed3.SetActive(true);
             answerAbackBlue3.SetActive(false);
+            if (QuestionG.actualAnswer3 == "Â")
+            {
+                answerBbackGreen3.SetActive(true);
+                answerBbackBlue3.SetActive(false);
+            }
+            else if (QuestionG.actualAnswer3 == "Ã")
+            {
+                answerCbackGreen3.SetActive(true);
+                answerCbackBlue3.SetActive(false);
+            }
+            else if (QuestionG.actualAnswer3 == "Ä")
+            {
+                answerDbackGreen3.SetActive(true);
+                answerDbackBlue3.SetActive(false);
+            }
+            else
+            {
+                answerAbackGreen3.SetActive(true);
+                answerAbackBlue3.SetActive(false);
+            }
             wrongFX3.Play();
             /* if (scoreValue3 == 0)
             {
