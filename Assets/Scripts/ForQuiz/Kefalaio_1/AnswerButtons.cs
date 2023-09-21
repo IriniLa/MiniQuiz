@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class AnswerButtons : MonoBehaviour
 {
     public GameObject answerDbackBlue; // Blue is waiting
@@ -41,6 +42,8 @@ public class AnswerButtons : MonoBehaviour
     public GameObject wrongAnswer;
     public int correctAnswer = 0;
     public int incorrectAnswer = 0;
+    public GameObject feedback;
+    
 
     public EndPanelController endPanelController;
 
@@ -53,15 +56,31 @@ public class AnswerButtons : MonoBehaviour
 
     void Update()
     {
-            currentScore.GetComponent<Text>().text = "SCORE: " + scoreValue;
+            if (scoreValue >= 55)
+            {
+                feedback.GetComponent<Text>().text = "Συγχαρητήρια!";
+            }
+            else if ( scoreValue < 55 && scoreValue >= 35)
+            {
+                feedback.GetComponent<Text>().text = "Καλή προσπάθεια!";
+            }
+            else if (scoreValue < 35)
+            {
+                feedback.GetComponent<Text>().text = "Προσπάθησε  ξανά! ";
+            }
+            else
+            {
+                feedback.GetComponent<Text>().text = " ";
+            }
+
+
+                currentScore.GetComponent<Text>().text = "SCORE: " + scoreValue;
             currentQuestion.GetComponent<Text>().text = curQuestion + " / " + totalQuestions;
             score.GetComponent<Text>().text = "ΣΚΟΡ: " + scoreValue + " / " + bestScore;
             rightAnswer.GetComponent<Text>().text = "Σωστές Απαντήσεις: " + correctAnswer;
             wrongAnswer.GetComponent<Text>().text = "Λάθος Απαντήσεις: " + incorrectAnswer;
 
-
     }
-
 
 
     public void  AnswerD()

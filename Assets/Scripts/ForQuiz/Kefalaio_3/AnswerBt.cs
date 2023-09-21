@@ -40,6 +40,7 @@ public class AnswerBt : MonoBehaviour
     public GameObject wrongAnswer3;
     public int correctAnswer3 = 0;
     public int incorrectAnswer3 = 0;
+    public GameObject feedback3;
 
     public EndPanelController endPanelController;
 
@@ -52,6 +53,23 @@ public class AnswerBt : MonoBehaviour
 
     void Update()
     {
+        if (scoreValue3 >= 30)
+        {
+            feedback3.GetComponent<Text>().text = "Συγχαρητήρια!";
+        }
+        else if (scoreValue3 < 30 && scoreValue3 >= 20)
+        {
+            feedback3.GetComponent<Text>().text = "Καλή προσπάθεια!";
+        }
+        else if (scoreValue3 < 20)
+        {
+            feedback3.GetComponent<Text>().text = "Προσπάθησε  ξανά! ";
+        }
+        else
+        {
+            feedback3.GetComponent<Text>().text = " ";
+        }
+
         currentScore3.GetComponent<Text>().text = "SCORE: " + scoreValue3;
         currentQuestion3.GetComponent<Text>().text = curQuestion3 + " / " + totalQuestions3;
         score3.GetComponent<Text>().text = "ΣΚΟΡ: " + scoreValue3 + " / " + bestScore3;

@@ -41,6 +41,7 @@ public class AnswerBtn : MonoBehaviour
     public GameObject wrongAnswer2;
     public int correctAnswer2 = 0;
     public int incorrectAnswer2 = 0;
+    public GameObject feedback2;
 
     public EndPanelController endPanelController;
 
@@ -53,6 +54,24 @@ public class AnswerBtn : MonoBehaviour
 
     void Update()
     {
+        if (scoreValue2 >= 40)
+        {
+            feedback2.GetComponent<Text>().text = "Συγχαρητήρια!";
+        }
+        else if (scoreValue2 < 40 && scoreValue2 >= 25)
+        {
+            feedback2.GetComponent<Text>().text = "Καλή προσπάθεια!";
+        }
+        else if (scoreValue2 < 25)
+        {
+            feedback2.GetComponent<Text>().text = "Προσπάθησε  ξανά! ";
+        }
+        else
+        {
+            feedback2.GetComponent<Text>().text = " ";
+        }
+
+
         currentScore2.GetComponent<Text>().text = "SCORE: " + scoreValue2;
         currentQuestion2.GetComponent<Text>().text = curQuestion2 + " / " + totalQuestions2;
         score2.GetComponent<Text>().text = "ΣΚΟΡ: " + scoreValue2 + " / " + bestScore2;

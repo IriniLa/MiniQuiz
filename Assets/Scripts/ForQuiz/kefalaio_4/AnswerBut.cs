@@ -40,6 +40,7 @@ public class AnswerBut : MonoBehaviour
     public int correctAnswer4 = 0;
     public int incorrectAnswer4 = 0;
     public int totalQuestions4 = 33;
+    public GameObject feedback4;
 
     public EndPanelController endPanelController;
 
@@ -52,6 +53,23 @@ public class AnswerBut : MonoBehaviour
 
     void Update()
     {
+        if (scoreValue4 >= 140)
+        {
+            feedback4.GetComponent<Text>().text = "Συγχαρητήρια!";
+        }
+        else if (scoreValue4 < 140 && scoreValue4 >= 100)
+        {
+            feedback4.GetComponent<Text>().text = "Καλή προσπάθεια!";
+        }
+        else if (scoreValue4 < 100)
+        {
+            feedback4.GetComponent<Text>().text = "Προσπάθησε  ξανά! ";
+        }
+        else
+        {
+            feedback4.GetComponent<Text>().text = " ";
+        }
+
         currentScore4.GetComponent<Text>().text = "SCORE: " + scoreValue4;
         currentQuestion4.GetComponent<Text>().text = curQuestion4 + " / " + totalQuestions4;
         score4.GetComponent<Text>().text = "ΣΚΟΡ: " + scoreValue4 + " / " + bestScore4;
