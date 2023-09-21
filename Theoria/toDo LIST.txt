@@ -28,3 +28,13 @@ NEW
 
 6. Lock Buttons (Chapter 2,3,4) "Το επίπεδο Χ (2) είναι κλειδωμένο. Για να ξεκλειδώσει χρειάζεσαι 40 Πόντους.
 7. Στο τέλος Κάθε Quiz, χρειάζεσαι Χ πόντους για να ξεκλειδώσεις το επόμενο κεφάλαιο,προσπάθησε ξανά ή Ξεκλείδωσες το κεφάλαιο 2!
+
+
+NEW
+
+1. Ioanna Epitheto
+2. Info Lorem Ipsum Change Text.
+3. Score Keeper - Level Locker.
+4. Save ??? an prolavoume aurio.
+5. Moodle
+6. Reward
