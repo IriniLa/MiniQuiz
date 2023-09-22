@@ -1769,10 +1769,10 @@ RectTransform:
   m_Children:
   - {fileID: 914432641}
   - {fileID: 1008407572}
+  - {fileID: 270724337}
   - {fileID: 820016520}
   - {fileID: 130614585}
   - {fileID: 1303598659}
-  - {fileID: 270724337}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
